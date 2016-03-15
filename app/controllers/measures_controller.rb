@@ -1,5 +1,8 @@
 class MeasuresController < ApplicationController
   before_action :set_measure, only: [:show, :update, :destroy]
+  before_filter :check_auth, only: []
+
+
 
   # GET /measures
   def index

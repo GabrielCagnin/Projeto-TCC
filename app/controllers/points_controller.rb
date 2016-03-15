@@ -1,6 +1,7 @@
 class PointsController < ApplicationController
   before_action :set_point, only: [:show, :update, :destroy]
 
+
   # GET /points
   def index
     @points = Point.all

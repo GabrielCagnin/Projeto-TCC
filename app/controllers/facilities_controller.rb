@@ -16,12 +16,19 @@ class FacilitiesController < ApplicationController
   # POST /facilities
   def create
     @facility = Facility.new(facility_params)
-
-    if @facility.save
-      render json: @facility, status: :created, location: @facility
+    # TODO repair this
+    if User.where(name: facility_params[:name]).nil?
+      if @facility.save
+        render json: @facility, status: :created, location: @facility
+      else
+        render json: @facility.errors, status: :unprocessable_entity
+      end
     else
-      render json: @facility.errors, status: :unprocessable_entity
+      response= "Facility '"+@facility.name+"' already exists."
+      render body: response
     end
+
+
   end
 
   # PATCH/PUT /facilities/1
