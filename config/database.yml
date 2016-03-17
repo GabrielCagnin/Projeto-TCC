@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: server_api_development
+  pool: 5
+  host: localhost
+  username: postgres
+  password: rails
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: server_api_production
+  pool: 5
+  host: localhost
+  username: postgres
+  password: rails

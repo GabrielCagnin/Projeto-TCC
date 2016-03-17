@@ -1,31 +1,27 @@
 class FacilitiesController < ApplicationController
-  before_action :set_facility, only: [:show, :update, :destroy]
+  before_action :set_facility, only: [:update, :destroy]
 
-  # GET /facilities
+  # GET /facilities/:user_id
   def index
-    @facilities = Facility.all
+    @user= User.find(params[:user_id])
+    @facilities = @user.facilities
 
     render json: @facilities
   end
 
-  # GET /facilities/1
-  def show
-    render json: @facility
-  end
+
 
   # POST /facilities
   def create
     @facility = Facility.new(facility_params)
-    # TODO repair this
-    if User.where(name: facility_params[:name]).nil?
+    if Facility.where(name: facility_params[:name]).empty?
       if @facility.save
-        render json: @facility, status: :created, location: @facility
+        render body: 'Error: facility was not created', status: :created
       else
         render json: @facility.errors, status: :unprocessable_entity
       end
     else
-      response= "Facility '"+@facility.name+"' already exists."
-      render body: response
+      render body: "Facility '"+@facility.name+"' already exists."
     end
 
 
@@ -46,12 +42,12 @@ class FacilitiesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+  # Use callbacks to share common setup or constraints between actions.
     def set_facility
       @facility = Facility.find(params[:id])
     end
 
-    # Only allow a trusted parameter "white list" through.
+  # Only allow a trusted parameter "white list" through.
     def facility_params
       params.require(:facility).permit(:name)
     end

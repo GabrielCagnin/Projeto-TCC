@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :facilities
+
+  get '/facilities/:user_id', to: 'facilities#index'
+  post '/facilities', to: 'facilities#create'
+
   devise_for :users
   resources :zones
   resources :points
