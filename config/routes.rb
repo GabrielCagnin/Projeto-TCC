@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
+  mount_devise_token_auth_for 'User', at: 'auth'
 
   get '/facilities/:user_id', to: 'facilities#index'
   post '/facilities', to: 'facilities#create'
 
-  devise_for :users
   resources :zones
   resources :points
   resources :measures

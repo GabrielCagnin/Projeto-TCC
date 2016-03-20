@@ -37,3 +37,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 gem 'devise', :github => 'plataformatec/devise', :branch => 'master'
+gem 'omniauth'
+gem 'devise_token_auth'
