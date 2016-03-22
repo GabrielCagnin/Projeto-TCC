@@ -1,8 +1,8 @@
 class ZonesController < ApplicationController
   before_action :set_zone, only: [:update, :destroy]
 
-  # GET /zones/:facility_id
-  def index
+  # GET /zones/facility/:facility_id
+  def show_facility_zones
     facility = Facility.find(params[:facility_id])
     zones = facility.zones
 
@@ -15,9 +15,9 @@ class ZonesController < ApplicationController
     zone = Zone.new(zone_params)
     if Zone.where(name: zone_params[:name]).empty?
       if zone.save
-        render json: "Zone '"+zone.name+"' was created.", status: :created, location: zone
+        render body: "Zone '"+zone.name+"' was created.", status: :created, location: zone
       else
-        render json: 'Error: zone was not created', status: :unprocessable_entity
+        render body: 'Error: zone was not created', status: :unprocessable_entity
       end
     else
       render body: "Zone '"+zone.name+"' already exists."

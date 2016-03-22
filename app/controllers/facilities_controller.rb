@@ -1,11 +1,10 @@
 class FacilitiesController < ApplicationController
   before_action :set_facility, only: [:update, :destroy]
 
-  # GET /facilities/:user_id
-  def index
+  # GET /facilities/user/:user_id
+  def show_user_facilities
     user= User.find(params[:user_id])
     facilities = user.facilities
-
     render json: facilities
   end
 

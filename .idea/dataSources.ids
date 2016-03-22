@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
   <data-source name="Rails server_api: development" uuid="aa3904d3-8873-4d77-b43b-9044d2ebfd03">
-    <database-info product="PostgreSQL" version="9.4.6" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+    <database-info product="PostgreSQL" version="9.4.5" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
       <identifier-quote-string>&quot;</identifier-quote-string>
     </database-info>
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact"/>
@@ -10,86 +10,86 @@
       <schema id="2" parent="1" name="public">
         <object-id>2200</object-id>
         <comment>standard public schema</comment>
-        <introspection-state-number>825</introspection-state-number>
-        <introspection-timestamp>2016-03-19.19:10:18.318</introspection-timestamp>
+        <introspection-state-number>823</introspection-state-number>
+        <introspection-timestamp>2016-03-22.16:51:01.665</introspection-timestamp>
       </schema>
       <sequence id="3" parent="2" name="facilities_id_seq">
-        <object-id>16928</object-id>
-        <state-number>820</state-number>
+        <object-id>16586</object-id>
+        <state-number>811</state-number>
       </sequence>
       <sequence id="4" parent="2" name="facilities_users_id_seq">
-        <object-id>16939</object-id>
-        <state-number>824</state-number>
+        <object-id>16597</object-id>
+        <state-number>812</state-number>
       </sequence>
       <sequence id="5" parent="2" name="measures_id_seq">
-        <object-id>16898</object-id>
-        <state-number>817</state-number>
+        <object-id>16605</object-id>
+        <state-number>813</state-number>
       </sequence>
       <sequence id="6" parent="2" name="points_id_seq">
-        <object-id>16909</object-id>
-        <state-number>818</state-number>
+        <object-id>16616</object-id>
+        <state-number>814</state-number>
       </sequence>
       <sequence id="7" parent="2" name="users_id_seq">
-        <object-id>16947</object-id>
-        <state-number>825</state-number>
+        <object-id>16624</object-id>
+        <state-number>815</state-number>
       </sequence>
       <sequence id="8" parent="2" name="zones_id_seq">
-        <object-id>16917</object-id>
+        <object-id>16642</object-id>
         <state-number>819</state-number>
       </sequence>
       <table id="9" parent="2" name="ar_internal_metadata">
-        <object-id>16890</object-id>
-        <state-number>816</state-number>
+        <object-id>16661</object-id>
+        <state-number>823</state-number>
       </table>
       <table id="10" parent="2" name="facilities">
-        <object-id>16930</object-id>
-        <state-number>820</state-number>
+        <object-id>16588</object-id>
+        <state-number>811</state-number>
       </table>
       <table id="11" parent="2" name="facilities_users">
-        <object-id>16941</object-id>
-        <state-number>824</state-number>
+        <object-id>16599</object-id>
+        <state-number>812</state-number>
       </table>
       <table id="12" parent="2" name="measures">
-        <object-id>16900</object-id>
-        <state-number>817</state-number>
+        <object-id>16607</object-id>
+        <state-number>813</state-number>
       </table>
       <table id="13" parent="2" name="points">
-        <object-id>16911</object-id>
-        <state-number>818</state-number>
+        <object-id>16618</object-id>
+        <state-number>814</state-number>
       </table>
       <table id="14" parent="2" name="schema_migrations">
-        <object-id>16882</object-id>
-        <state-number>815</state-number>
+        <object-id>16653</object-id>
+        <state-number>820</state-number>
       </table>
       <table id="15" parent="2" name="users">
-        <object-id>16949</object-id>
-        <state-number>825</state-number>
+        <object-id>16626</object-id>
+        <state-number>815</state-number>
       </table>
       <table id="16" parent="2" name="zones">
-        <object-id>16919</object-id>
+        <object-id>16644</object-id>
         <state-number>819</state-number>
       </table>
       <column id="17" parent="9" name="key">
-        <state-number>816</state-number>
+        <state-number>823</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar</data-type>
       </column>
       <column id="18" parent="9" name="value">
-        <state-number>816</state-number>
+        <state-number>823</state-number>
         <data-type>varchar</data-type>
       </column>
       <column id="19" parent="9" name="created_at">
-        <state-number>816</state-number>
+        <state-number>823</state-number>
         <mandatory>1</mandatory>
         <data-type>timestamp</data-type>
       </column>
       <column id="20" parent="9" name="updated_at">
-        <state-number>816</state-number>
+        <state-number>823</state-number>
         <mandatory>1</mandatory>
         <data-type>timestamp</data-type>
       </column>
       <index id="21" parent="9" name="ar_internal_metadata_pkey">
-        <object-id>16896</object-id>
+        <object-id>16667</object-id>
         <columns>key</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
@@ -100,27 +100,27 @@
         <primary>1</primary>
       </key>
       <column id="23" parent="10" name="id">
-        <state-number>820</state-number>
+        <state-number>811</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
         <default-expression>nextval(&apos;facilities_id_seq&apos;::regclass)</default-expression>
       </column>
       <column id="24" parent="10" name="name">
-        <state-number>820</state-number>
+        <state-number>811</state-number>
         <data-type>varchar</data-type>
       </column>
       <column id="25" parent="10" name="created_at">
-        <state-number>820</state-number>
+        <state-number>811</state-number>
         <mandatory>1</mandatory>
         <data-type>timestamp</data-type>
       </column>
       <column id="26" parent="10" name="updated_at">
-        <state-number>820</state-number>
+        <state-number>811</state-number>
         <mandatory>1</mandatory>
         <data-type>timestamp</data-type>
       </column>
       <index id="27" parent="10" name="facilities_pkey">
-        <object-id>16937</object-id>
+        <object-id>16595</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
@@ -131,31 +131,31 @@
         <primary>1</primary>
       </key>
       <column id="29" parent="11" name="id">
-        <state-number>821</state-number>
+        <state-number>812</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
-        <default-expression>nextval(&apos;facility_users_id_seq&apos;::regclass)</default-expression>
+        <default-expression>nextval(&apos;facilities_users_id_seq&apos;::regclass)</default-expression>
       </column>
       <column id="30" parent="11" name="created_at">
-        <state-number>821</state-number>
+        <state-number>812</state-number>
         <mandatory>1</mandatory>
         <data-type>timestamp</data-type>
       </column>
       <column id="31" parent="11" name="updated_at">
-        <state-number>821</state-number>
+        <state-number>812</state-number>
         <mandatory>1</mandatory>
         <data-type>timestamp</data-type>
       </column>
       <column id="32" parent="11" name="facility_id">
-        <state-number>822</state-number>
+        <state-number>812</state-number>
         <data-type>integer</data-type>
       </column>
       <column id="33" parent="11" name="user_id">
-        <state-number>823</state-number>
+        <state-number>812</state-number>
         <data-type>integer</data-type>
       </column>
       <index id="34" parent="11" name="facilities_users_pkey">
-        <object-id>16945</object-id>
+        <object-id>16603</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
@@ -166,39 +166,39 @@
         <primary>1</primary>
       </key>
       <column id="36" parent="12" name="id">
-        <state-number>817</state-number>
+        <state-number>813</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
         <default-expression>nextval(&apos;measures_id_seq&apos;::regclass)</default-expression>
       </column>
       <column id="37" parent="12" name="ssid">
-        <state-number>817</state-number>
+        <state-number>813</state-number>
         <data-type>varchar</data-type>
       </column>
       <column id="38" parent="12" name="bssid">
-        <state-number>817</state-number>
+        <state-number>813</state-number>
         <data-type>macaddr</data-type>
       </column>
       <column id="39" parent="12" name="rssi">
-        <state-number>817</state-number>
+        <state-number>813</state-number>
         <data-type>integer</data-type>
       </column>
       <column id="40" parent="12" name="point_id">
-        <state-number>817</state-number>
+        <state-number>813</state-number>
         <data-type>integer</data-type>
       </column>
       <column id="41" parent="12" name="created_at">
-        <state-number>817</state-number>
+        <state-number>813</state-number>
         <mandatory>1</mandatory>
         <data-type>timestamp</data-type>
       </column>
       <column id="42" parent="12" name="updated_at">
-        <state-number>817</state-number>
+        <state-number>813</state-number>
         <mandatory>1</mandatory>
         <data-type>timestamp</data-type>
       </column>
       <index id="43" parent="12" name="measures_pkey">
-        <object-id>16907</object-id>
+        <object-id>16614</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
@@ -209,31 +209,31 @@
         <primary>1</primary>
       </key>
       <column id="45" parent="13" name="id">
-        <state-number>818</state-number>
+        <state-number>814</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
         <default-expression>nextval(&apos;points_id_seq&apos;::regclass)</default-expression>
       </column>
       <column id="46" parent="13" name="count">
-        <state-number>818</state-number>
+        <state-number>814</state-number>
         <data-type>integer</data-type>
       </column>
       <column id="47" parent="13" name="zone_id">
-        <state-number>818</state-number>
+        <state-number>814</state-number>
         <data-type>integer</data-type>
       </column>
       <column id="48" parent="13" name="created_at">
-        <state-number>818</state-number>
+        <state-number>814</state-number>
         <mandatory>1</mandatory>
         <data-type>timestamp</data-type>
       </column>
       <column id="49" parent="13" name="updated_at">
-        <state-number>818</state-number>
+        <state-number>814</state-number>
         <mandatory>1</mandatory>
         <data-type>timestamp</data-type>
       </column>
       <index id="50" parent="13" name="points_pkey">
-        <object-id>16915</object-id>
+        <object-id>16622</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
@@ -244,12 +244,12 @@
         <primary>1</primary>
       </key>
       <column id="52" parent="14" name="version">
-        <state-number>815</state-number>
+        <state-number>820</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar</data-type>
       </column>
       <index id="53" parent="14" name="schema_migrations_pkey">
-        <object-id>16888</object-id>
+        <object-id>16659</object-id>
         <columns>version</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
@@ -260,128 +260,128 @@
         <primary>1</primary>
       </key>
       <column id="55" parent="15" name="id">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
         <default-expression>nextval(&apos;users_id_seq&apos;::regclass)</default-expression>
       </column>
       <column id="56" parent="15" name="provider">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar</data-type>
         <default-expression>&apos;email&apos;::character varying</default-expression>
       </column>
       <column id="57" parent="15" name="uid">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar</data-type>
         <default-expression>&apos;&apos;::character varying</default-expression>
       </column>
       <column id="58" parent="15" name="encrypted_password">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar</data-type>
         <default-expression>&apos;&apos;::character varying</default-expression>
       </column>
       <column id="59" parent="15" name="reset_password_token">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <data-type>varchar</data-type>
       </column>
       <column id="60" parent="15" name="reset_password_sent_at">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <data-type>timestamp</data-type>
       </column>
       <column id="61" parent="15" name="remember_created_at">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <data-type>timestamp</data-type>
       </column>
       <column id="62" parent="15" name="sign_in_count">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
         <default-expression>0</default-expression>
       </column>
       <column id="63" parent="15" name="current_sign_in_at">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <data-type>timestamp</data-type>
       </column>
       <column id="64" parent="15" name="last_sign_in_at">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <data-type>timestamp</data-type>
       </column>
       <column id="65" parent="15" name="current_sign_in_ip">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <data-type>varchar</data-type>
       </column>
       <column id="66" parent="15" name="last_sign_in_ip">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <data-type>varchar</data-type>
       </column>
       <column id="67" parent="15" name="confirmation_token">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <data-type>varchar</data-type>
       </column>
       <column id="68" parent="15" name="confirmed_at">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <data-type>timestamp</data-type>
       </column>
       <column id="69" parent="15" name="confirmation_sent_at">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <data-type>timestamp</data-type>
       </column>
       <column id="70" parent="15" name="unconfirmed_email">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <data-type>varchar</data-type>
       </column>
       <column id="71" parent="15" name="name">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <data-type>varchar</data-type>
       </column>
       <column id="72" parent="15" name="nickname">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <data-type>varchar</data-type>
       </column>
       <column id="73" parent="15" name="image">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <data-type>varchar</data-type>
       </column>
       <column id="74" parent="15" name="email">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <data-type>varchar</data-type>
       </column>
       <column id="75" parent="15" name="tokens">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <data-type>json</data-type>
       </column>
       <column id="76" parent="15" name="created_at">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <data-type>timestamp</data-type>
       </column>
       <column id="77" parent="15" name="updated_at">
-        <state-number>825</state-number>
+        <state-number>815</state-number>
         <data-type>timestamp</data-type>
       </column>
       <index id="78" parent="15" name="users_pkey">
-        <object-id>16960</object-id>
+        <object-id>16637</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
       <index id="79" parent="15" name="index_users_on_uid_and_provider">
-        <object-id>16963</object-id>
+        <object-id>16641</object-id>
         <columns>uid
 provider</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
       <index id="80" parent="15" name="index_users_on_reset_password_token">
-        <object-id>16964</object-id>
+        <object-id>16640</object-id>
         <columns>reset_password_token</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
       <index id="81" parent="15" name="index_users_on_email">
-        <object-id>16962</object-id>
+        <object-id>16639</object-id>
         <columns>email</columns>
         <desc-columns></desc-columns>
       </index>
@@ -415,7 +415,7 @@ provider</columns>
         <data-type>timestamp</data-type>
       </column>
       <index id="88" parent="16" name="zones_pkey">
-        <object-id>16926</object-id>
+        <object-id>16651</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
