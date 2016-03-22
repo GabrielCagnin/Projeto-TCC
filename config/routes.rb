@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   get '/facilities/:user_id', to: 'facilities#index'
   post '/facilities', to: 'facilities#create'
 
+  get '/zones/:facility_id', to: 'zones#index'
+  post '/zones', to: 'zones#create'
+
   resources :zones
   resources :points
   resources :measures

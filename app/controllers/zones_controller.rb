@@ -1,50 +1,52 @@
 class ZonesController < ApplicationController
-  before_action :set_zone, only: [:show, :update, :destroy]
+  before_action :set_zone, only: [:update, :destroy]
 
-  # GET /zones
+  # GET /zones/:facility_id
   def index
-    @zones = Zone.all
+    facility = Facility.find(params[:facility_id])
+    zones = facility.zones
 
-    render json: @zones
+    render json: zones
   end
 
-  # GET /zones/1
-  def show
-    render json: @zone
-  end
 
   # POST /zones
   def create
-    @zone = Zone.new(zone_params)
-
-    if @zone.save
-      render json: @zone, status: :created, location: @zone
+    zone = Zone.new(zone_params)
+    if Zone.where(name: zone_params[:name]).empty?
+      if zone.save
+        render json: "Zone '"+zone.name+"' was created.", status: :created, location: zone
+      else
+        render json: 'Error: zone was not created', status: :unprocessable_entity
+      end
     else
-      render json: @zone.errors, status: :unprocessable_entity
+      render body: "Zone '"+zone.name+"' already exists."
     end
   end
 
   # PATCH/PUT /zones/1
   def update
-    if @zone.update(zone_params)
-      render json: @zone
+    zone = Zone.new(zone_params)
+    if zone.update(zone_params)
+      render json: zone
     else
-      render json: @zone.errors, status: :unprocessable_entity
+      render json: zone.errors, status: :unprocessable_entity
     end
   end
 
   # DELETE /zones/1
   def destroy
-    @zone.destroy
+    zone = Zone.new(zone_params)
+    zone.destroy
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+  # Use callbacks to share common setup or constraints between actions.
     def set_zone
       @zone = Zone.find(params[:id])
     end
 
-    # Only allow a trusted parameter "white list" through.
+  # Only allow a trusted parameter "white list" through.
     def zone_params
       params.require(:zone).permit(:name, :facility_id)
     end

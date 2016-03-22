@@ -3,10 +3,10 @@ class FacilitiesController < ApplicationController
 
   # GET /facilities/:user_id
   def index
-    @user= User.find(params[:user_id])
-    @facilities = @user.facilities
+    user= User.find(params[:user_id])
+    facilities = user.facilities
 
-    render json: @facilities
+    render json: facilities
   end
 
 
@@ -18,15 +18,15 @@ class FacilitiesController < ApplicationController
       render body: 'No user id'
     else
       if User.find_by_id(user_id)
-        @facility = Facility.new(facility_params)
+        facility = Facility.new(facility_params)
         if Facility.where(name: facility_params[:name]).empty?
-          if @facility.save
-            render body: "Facility '"+@facility.name+"' was created.", status: :created
+          if facility.save
+            render body: "Facility '"+facility.name+"' was created.", status: :created
           else
             render json: 'Error: facility was not created', status: :unprocessable_entity
           end
         else
-          render body: "Facility '"+@facility.name+"' already exists."
+          render body: "Facility '"+facility.name+"' already exists."
         end
       else
         render body: 'User id '+user_id.to_s+' does not exist'
