@@ -7,8 +7,9 @@ Rails.application.routes.draw do
   get '/zones/facility/:facility_id', to: 'zones#show_facility_zones'
   post '/zones', to: 'zones#create'
 
-  resources :zones
-  resources :points
+  get '/points/zone/:zone_id', to: 'points#show_zone_points'
+  post '/points', to: 'points#create'
+
   resources :measures
 
   get '/test', to: 'test#user_facilities'

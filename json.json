@@ -1,6 +1,6 @@
 {
-  "zone": {
-    "name": "Zona A",
-    "facility_id": 1
+  "facility": {
+    "name": "Farmácia",
+    "user_id": 1
   }
 }

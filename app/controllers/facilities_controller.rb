@@ -12,17 +12,18 @@ class FacilitiesController < ApplicationController
 
   # POST /facilities
   def create
-    user_id=facility_params[:facilities_users_attributes].first[:user_id]
+    user_id=facility_params[:user_id]
     if user_id.nil?
       render body: 'No user id'
     else
       if User.find_by_id(user_id)
-        facility = Facility.new(facility_params)
+        facility = Facility.new(name: facility_params[:name])
         if Facility.where(name: facility_params[:name]).empty?
           if facility.save
+            facility.users << User.find_by_id(user_id)
             render body: "Facility '"+facility.name+"' was created.", status: :created
           else
-            render json: 'Error: facility was not created', status: :unprocessable_entity
+            render body: 'Error: facility was not created', status: :unprocessable_entity
           end
         else
           render body: "Facility '"+facility.name+"' already exists."
@@ -56,6 +57,6 @@ class FacilitiesController < ApplicationController
 
   # Only allow a trusted parameter "white list" through.
     def facility_params
-      params.require(:facility).permit(:name, facilities_users_attributes: [:user_id])
+      params.require(:facility).permit(:name, :user_id)
     end
 end

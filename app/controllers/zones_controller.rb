@@ -13,14 +13,19 @@ class ZonesController < ApplicationController
   # POST /zones
   def create
     zone = Zone.new(zone_params)
-    if Zone.where(name: zone_params[:name]).empty?
-      if zone.save
-        render body: "Zone '"+zone.name+"' was created.", status: :created, location: zone
-      else
-        render body: 'Error: zone was not created', status: :unprocessable_entity
-      end
+    facility_id=zone_params[:facility_id]
+    if Facility.find(facility_id).empty?
+      render body: 'Facility id '+facility_id.to_s+' does not exist'
     else
-      render body: "Zone '"+zone.name+"' already exists."
+      if Zone.where(name: zone_params[:name]).empty?
+        if zone.save
+          render body: "Zone '"+zone.name+"' was created.", status: :created
+        else
+          render body: 'Error: zone was not created', status: :unprocessable_entity
+        end
+      else
+        render body: "Zone '"+zone.name+"' already exists."
+      end
     end
   end
 

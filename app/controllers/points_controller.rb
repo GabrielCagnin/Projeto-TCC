@@ -2,26 +2,22 @@ class PointsController < ApplicationController
   before_action :set_point, only: [:show, :update, :destroy]
 
 
-  # GET /points
-  def index
-    @points = Point.all
+  # GET /points/zone/:zone_id
+  def show_zone_points
+    points = Point.find(params[:zone_id])
 
-    render json: @points
+    render json: points
   end
 
-  # GET /points/1
-  def show
-    render json: @point
-  end
 
   # POST /points
   def create
-    @point = Point.new(point_params)
+    point = Point.new(point_params)
 
     if @point.save
-      render json: @point, status: :created, location: @point
+      render body: "Point '"+point.name+"' was created.", status: :created, location: @point
     else
-      render json: @point.errors, status: :unprocessable_entity
+      render body: 'Error: point was not created', status: :unprocessable_entity
     end
   end
 
@@ -40,12 +36,12 @@ class PointsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+  # Use callbacks to share common setup or constraints between actions.
     def set_point
       @point = Point.find(params[:id])
     end
 
-    # Only allow a trusted parameter "white list" through.
+  # Only allow a trusted parameter "white list" through.
     def point_params
       params.require(:point).permit(:count, :zone_id)
     end
