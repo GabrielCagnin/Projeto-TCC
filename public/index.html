@@ -1,5 +1,9 @@
 <pre>
-Facilty example:
+
+Facility GET example:
+GET /facilities/user/1  -  Recover all facilities from user with id '1'
+
+Facilty POST example:
 
 {
   "facility": {
@@ -7,4 +11,20 @@ Facilty example:
     "user_id": 1
   }
 }
+
+<hr>
+Zone GET example:
+GET /zone/facilities/1  -  Recover all zones from facility with id '1'
+
+Zone POST example:
+
+{
+  "zone": {
+    "name": "Zona A",
+    "facility_id": 1
+  }
+}
 </pre>
+
+
+
