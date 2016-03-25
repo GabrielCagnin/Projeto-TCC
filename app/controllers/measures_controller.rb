@@ -1,29 +1,31 @@
 class MeasuresController < ApplicationController
-  before_action :set_measure, only: [:show, :update, :destroy]
-  before_filter :check_auth, only: []
-
+  before_action :set_measure, only: [:update, :destroy]
 
 
   # GET /measures
-  def index
-    @measures = Measure.all
-
-    render json: @measures
+  def show_point_measures
+    point=Point.find_by_id(measure_params[:point_id])
+    measures=point.measures
+    render json: measures
   end
 
   # GET /measures/1
   def show
-    render json: @measure
+    render json: measure
   end
 
   # POST /measures
   def create
-    @measure = Measure.new(measure_params)
-
-    if @measure.save
-      render json: @measure, status: :created, location: @measure
+    point_id=measure_params[:point_id]
+    measure = Measure.new(measure_params)
+    if Point.find_by_id(point_id)
+      if measure.save
+        render body: 'Measure was created.', status: :created
+      else
+        render body: 'Error: measure was not created', status: :unprocessable_entity
+      end
     else
-      render json: @measure.errors, status: :unprocessable_entity
+      render body: 'Point with id '+point_id.to_s+' does not exist'
     end
   end
 

@@ -28,7 +28,7 @@ class ZonesController < ApplicationController
           render body: "Zone '"+zone.name+"' already exists."
         end
       else
-        render body: 'Facility id '+facility_id.to_s+' does not exist'
+        render body: 'Facility with id '+facility_id.to_s+' does not exist'
       end
     end
   end

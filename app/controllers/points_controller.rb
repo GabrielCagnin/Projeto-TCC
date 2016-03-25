@@ -28,7 +28,7 @@ class PointsController < ApplicationController
           render body: "Point '"+point.count.to_s+"' already exists in this zone."
         end
       else
-        render body: 'Zone id '+zone_id.to_s+' does not exist'
+        render body: 'Zone with id '+zone_id.to_s+' does not exist'
       end
     end
   end

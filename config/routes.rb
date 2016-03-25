@@ -10,11 +10,8 @@ Rails.application.routes.draw do
   get '/points/zone/:zone_id', to: 'points#show_zone_points'
   post '/points', to: 'points#create'
 
-  resources :measures
+  get '/measures/point/:point_id', to: 'measures#show_point_measures'
+  post '/measures', to: 'measures#create'
 
   get '/test', to: 'test#user_facilities'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-
-  # Serve websocket cable requests in-process
-  # mount ActionCable.server => '/cable'
 end

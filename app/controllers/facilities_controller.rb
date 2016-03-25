@@ -29,7 +29,7 @@ class FacilitiesController < ApplicationController
           render body: "Facility '"+facility.name+"' already exists."
         end
       else
-        render body: 'User id '+user_id.to_s+' does not exist'
+        render body: 'User with id '+user_id.to_s+' does not exist'
       end
     end
 
