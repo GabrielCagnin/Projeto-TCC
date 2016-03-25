@@ -31,7 +31,6 @@ class ZonesController < ApplicationController
         render body: 'Facility id '+facility_id.to_s+' does not exist'
       end
     end
-
   end
 
   # PATCH/PUT /zones/1

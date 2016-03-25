@@ -1,10 +1,10 @@
 class PointsController < ApplicationController
   before_action :set_point, only: [:show, :update, :destroy]
 
-
   # GET /points/zone/:zone_id
   def show_zone_points
-    points = Point.find(params[:zone_id])
+    zone=Zone.find_by_id(params[:zone_id])
+    points = zone.points
 
     render json: points
   end
@@ -13,11 +13,23 @@ class PointsController < ApplicationController
   # POST /points
   def create
     point = Point.new(point_params)
-
-    if @point.save
-      render body: "Point '"+point.name+"' was created.", status: :created, location: @point
+    zone_id=point_params[:zone_id]
+    if zone_id.nil?
+      render body: 'No zone id'
     else
-      render body: 'Error: point was not created', status: :unprocessable_entity
+      if Zone.find_by_id(zone_id)
+        if Zone.find_by_id(zone_id).points.where(count: point_params[:count]).empty?
+          if point.save
+            render body: "Point '"+point.count.to_s+"' was created.", status: :created
+          else
+            render body: 'Error: point was not created', status: :unprocessable_entity
+          end
+        else
+          render body: "Point '"+point.count.to_s+"' already exists in this zone."
+        end
+      else
+        render body: 'Zone id '+zone_id.to_s+' does not exist'
+      end
     end
   end
 

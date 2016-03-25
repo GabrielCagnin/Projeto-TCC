@@ -14,7 +14,7 @@ Facilty POST example:
 
 <hr>
 Zone GET example:
-GET /zone/facilities/1  -  Recover all zones from facility with id '1'
+GET /zones/facility/1  -  Recover all zones from facility with id '1'
 
 Zone POST example:
 
@@ -22,6 +22,19 @@ Zone POST example:
   "zone": {
     "name": "Zona A",
     "facility_id": 1
+  }
+}
+
+<hr>
+Point GET example:
+GET /points/zone/1  -  Recover all points from zone with id '1'
+
+Point POST example:
+
+{
+  "point": {
+    "count": "1",
+    "zone_id": 1
   }
 }
 </pre>

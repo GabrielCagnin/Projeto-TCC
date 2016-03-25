@@ -1,6 +1,6 @@
 {
-  "zone": {
-    "name": "Zona C",
-    "facility_id": 2
+  "point": {
+    "count": "2",
+    "zone_id": 2
   }
 }
