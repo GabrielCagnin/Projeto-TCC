@@ -1,4 +1,13 @@
 GIT
+  remote: git://github.com/lynndylanhurley/devise_token_auth.git
+  revision: 15bf7857eca2d33602c7a9cb9d08db8a160f8ab8
+  branch: master
+  specs:
+    devise_token_auth (0.1.37)
+      devise (> 3.5.2, < 4.1)
+      rails (< 6)
+
+GIT
   remote: git://github.com/plataformatec/devise.git
   revision: 69bee06ceee6280b54304928bb6e55c5064abad8
   branch: master
@@ -55,9 +64,6 @@ GEM
     builder (3.2.2)
     byebug (8.2.2)
     concurrent-ruby (1.0.1)
-    devise_token_auth (0.1.37)
-      devise (> 3.5.2, < 4.1)
-      rails (< 6)
     erubis (2.7.0)
     ffi (1.9.10)
     globalid (0.3.6)
@@ -148,7 +154,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   devise!
-  devise_token_auth
+  devise_token_auth!
   listen (~> 3.0.5)
   omniauth
   pg (~> 0.18)
