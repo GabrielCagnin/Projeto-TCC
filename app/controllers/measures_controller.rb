@@ -1,5 +1,6 @@
 class MeasuresController < ApplicationController
   before_action :set_measure, only: [:update, :destroy]
+  before_action :authenticate_user!, only: [:create]
 
 
   # GET /measures

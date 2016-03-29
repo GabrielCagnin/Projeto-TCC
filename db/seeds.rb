@@ -7,9 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 u=User.create([
-                {email: 'adriano@indoorwifi.com', password: 'adriano1234'},
-                {email: 'thiago@indoorwifi.com', password: 'thiago1234'},
-                {email: 'ricardo@indoorwifi.com', password: 'ricardo1234'}
+                  {email: 'adriano@indoorwifi.com', password: 'adriano1234', name: 'Adriano'},
+                  {email: 'thiago@indoorwifi.com', password: 'thiago1234', name: 'Thiago'},
+                  {email: 'ricardo@indoorwifi.com', password: 'ricardo1234', name: 'Ricardo'}
             ])
 
 f=Facility.create(name: 'Shopping')

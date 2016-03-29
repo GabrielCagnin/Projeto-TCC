@@ -1,5 +1,6 @@
 class FacilitiesController < ApplicationController
   before_action :set_facility, only: [:update, :destroy]
+  before_action :authenticate_user!, only: [:create]
 
   # GET /facilities/user/:user_id
   def show_user_facilities

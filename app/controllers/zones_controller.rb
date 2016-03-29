@@ -1,5 +1,6 @@
 class ZonesController < ApplicationController
   before_action :set_zone, only: [:update, :destroy]
+  before_action :authenticate_user!, only: [:create]
 
   # GET /zones/facility/:facility_id
   def show_facility_zones

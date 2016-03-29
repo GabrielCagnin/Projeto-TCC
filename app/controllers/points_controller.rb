@@ -1,5 +1,6 @@
 class PointsController < ApplicationController
   before_action :set_point, only: [:show, :update, :destroy]
+  before_action :authenticate_user!, only: [:create]
 
   # GET /points/zone/:zone_id
   def show_zone_points
