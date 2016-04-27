@@ -12,6 +12,4 @@ Rails.application.routes.draw do
 
   get '/measures/point/:point_id', to: 'measures#show_point_measures'
   post '/measures', to: 'measures#create'
-
-  get '/test', to: 'test#user_facilities'
 end
