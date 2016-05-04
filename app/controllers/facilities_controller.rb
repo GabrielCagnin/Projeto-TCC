@@ -4,8 +4,8 @@ class FacilitiesController < ApplicationController
 
   # GET /facilities/user/:user_id
   def show_user_facilities
-    user= User.find(params[:user_id])
-    facilities = user.facilities
+    user= User.where(id: params[:user_id]).first
+    facilities = user.facilities.order('name ASC')
     render json: facilities
   end
 

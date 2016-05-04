@@ -4,8 +4,8 @@ class ZonesController < ApplicationController
 
   # GET /zones/facility/:facility_id
   def show_facility_zones
-    facility = Facility.find(params[:facility_id])
-    zones = facility.zones
+    facility = Facility.where(id: params[:facility_id]).first
+    zones = facility.zones.order('name ASC')
 
     render json: zones
   end
