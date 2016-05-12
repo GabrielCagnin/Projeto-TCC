@@ -11,10 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160318215738) do
+ActiveRecord::Schema.define(version: 20160511214712) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "access_points", force: :cascade do |t|
+    t.string "ssid"
+    t.macaddr "bssid"
+    t.integer "rssi"
+    t.integer "measure_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "facilities", force: :cascade do |t|
     t.string   "name"
@@ -30,9 +39,6 @@ ActiveRecord::Schema.define(version: 20160318215738) do
   end
 
   create_table "measures", force: :cascade do |t|
-    t.string   "ssid"
-    t.macaddr  "bssid"
-    t.integer  "rssi"
     t.integer  "point_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

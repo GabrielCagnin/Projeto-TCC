@@ -10,10 +10,6 @@ class MeasuresController < ApplicationController
     render json: measures
   end
 
-  # GET /measures/1
-  def show
-    render json: measure
-  end
 
   # POST /measures
   def create
@@ -52,6 +48,6 @@ class MeasuresController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def measure_params
-      params.require(:measure).permit(:ssid, :bssid, :rssi, :point_id)
+      params.permit(:point_id)
     end
 end
