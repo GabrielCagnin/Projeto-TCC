@@ -46,10 +46,22 @@ Measure POST example:
 
 {
   "measure": {
+    "point_id": 1
+  }
+}
+
+<hr>
+Measure GET example:
+GET /access_points/measure/1  -  Recover all access points from measure with id '1'
+
+Measure POST example:
+
+{
+  "access_point": {
     "ssid": "wifi 1",
     "bssid": "00:11:22:33:44:55",
     "rssi": -40,
-    "point_id": 1
+    "measure_id": 1
   }
 }
 
