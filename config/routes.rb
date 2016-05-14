@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :access_points
   mount_devise_token_auth_for 'User', at: 'auth'
 
   get '/facilities/user/:user_id', to: 'facilities#show_user_facilities'
