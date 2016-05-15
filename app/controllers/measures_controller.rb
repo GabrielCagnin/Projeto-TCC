@@ -17,7 +17,7 @@ class MeasuresController < ApplicationController
     measure = Measure.new(measure_params)
     if Point.find_by_id(point_id)
       if measure.save
-        render body: 'Measure was created.', status: :created
+        render json: measure, status: :created
       else
         render body: 'Error: measure was not created', status: :unprocessable_entity
       end
