@@ -5,7 +5,7 @@ class MeasuresController < ApplicationController
 
   # GET /measures
   def show_point_measures
-    point=Point.find_by_id(measure_params[:point_id])
+    point=Point.find_by_id(params[:point_id])
     measures=point.measures
     render json: measures
   end
@@ -13,8 +13,8 @@ class MeasuresController < ApplicationController
 
   # POST /measures
   def create
-    point_id=measure_params[:point_id]
     measure = Measure.new(measure_params)
+    point_id=measure_params[:point_id]
     if Point.find_by_id(point_id)
       if measure.save
         render json: measure, status: :created

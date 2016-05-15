@@ -1,5 +1,5 @@
 class PointsController < ApplicationController
-  before_action :set_point, only: [:show, :update, :destroy]
+  before_action :set_point, only: [:update, :destroy]
   before_action :authenticate_user!, only: [:create]
 
 
@@ -7,7 +7,6 @@ class PointsController < ApplicationController
   def show_zone_points
     zone=Zone.find_by_id(params[:zone_id])
     points = zone.points
-
     render json: points
   end
 

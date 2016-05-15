@@ -4,15 +4,15 @@ class AccessPointsController < ApplicationController
 ######
 
   def show_measure_access_points
-    measure=Measure.find_by_id(access_point_params[:measure_id])
+    measure=Measure.find_by_id(params[:measure_id])
     access_points=measure.access_points
     render json: access_points
   end
 
 # POST /measures
   def create
-    measure_id=access_point_params[:measure_id]
     access_point = AccessPoint.new(access_point_params)
+    measure_id=access_point_params[:measure_id]
     if Measure.find_by_id(measure_id)
       if access_point.save
         render body: 'Access Point was created.', status: :created
