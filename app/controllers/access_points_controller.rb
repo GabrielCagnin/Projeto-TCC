@@ -47,6 +47,6 @@ class AccessPointsController < ApplicationController
 
 # Only allow a trusted parameter "white list" through.
   def access_point_params
-    params.permit(:ssid, :bssid, :rssi, :measure_id)
+    params.require(:access_point).permit(:ssid, :bssid, :rssi, :measure_id)
   end
 end
