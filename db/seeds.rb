@@ -5,13 +5,3 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-u=User.create([
-                  {email: 'adriano@indoorwifi.com', password: 'adriano1234', name: 'Adriano', image: 'https://cdn1.iconfinder.com/data/icons/user-pictures/100/unknown-128.png'},
-                  {email: 'thiago@indoorwifi.com', password: 'thiago1234', name: 'Thiago', image: 'https://cdn1.iconfinder.com/data/icons/user-pictures/100/unknown-128.png'},
-                  {email: 'ricardo@indoorwifi.com', password: 'ricardo1234', name: 'Ricardo', image: 'https://cdn1.iconfinder.com/data/icons/user-pictures/100/unknown-128.png'}
-            ])
-
-f=Facility.create(name: 'Shopping')
-
-FacilityUser.create(user_id: u.first.id, facility_id: f.id)

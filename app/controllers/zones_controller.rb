@@ -1,53 +1,44 @@
 class ZonesController < ApplicationController
-  before_action :set_zone, only: [:update, :destroy]
-  before_action :authenticate_user!, only: [:create]
+  before_action :set_zone, only: [:show, :update, :destroy]
 
-  # GET /zones/facility/:facility_id
-  def show_facility_zones
-    facility = Facility.where(id: params[:facility_id]).first
-    zones = facility.zones.order('name ASC')
-
-    render json: zones
+  # GET /zones
+  # GET /zones.json
+  def index
+    @zones = Zone.all
+    render json: @zones
   end
 
+  # GET /zones/1
+  # GET /zones/1.json
+  def show
+  end
 
   # POST /zones
+  # POST /zones.json
   def create
-    zone = Zone.new(zone_params)
-    facility_id=zone_params[:facility_id]
-    if facility_id.nil?
-      render body: 'No facility id'
+    @zone = Zone.new(zone_params)
+
+    if @zone.save
+      render :show, status: :created, location: @zone
     else
-      if Facility.find_by_id(facility_id)
-        if Zone.where(name: zone_params[:name]).empty?
-          if zone.save
-            render body: "Zone '"+zone.name+"' was created.", status: :created
-          else
-            render body: 'Error: zone was not created', status: :unprocessable_entity
-          end
-        else
-          render body: "Zone '"+zone.name+"' already exists."
-        end
-      else
-        render body: 'Facility with id '+facility_id.to_s+' does not exist'
-      end
+      render json: @zone.errors, status: :unprocessable_entity
     end
   end
 
   # PATCH/PUT /zones/1
+  # PATCH/PUT /zones/1.json
   def update
-    zone = Zone.new(zone_params)
-    if zone.update(zone_params)
-      render json: zone
+    if @zone.update(zone_params)
+      render :show, status: :ok, location: @zone
     else
-      render json: zone.errors, status: :unprocessable_entity
+      render json: @zone.errors, status: :unprocessable_entity
     end
   end
 
   # DELETE /zones/1
+  # DELETE /zones/1.json
   def destroy
-    zone = Zone.new(zone_params)
-    zone.destroy
+    @zone.destroy
   end
 
   private
@@ -56,8 +47,8 @@ class ZonesController < ApplicationController
       @zone = Zone.find(params[:id])
     end
 
-  # Only allow a trusted parameter "white list" through.
+  # Never trust parameters from the scary internet, only allow the white list through.
     def zone_params
-      params.require(:zone).permit(:name, :facility_id)
+      params.require(:zone).permit(:name)
     end
 end

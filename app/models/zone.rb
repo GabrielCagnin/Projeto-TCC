@@ -1,4 +1,4 @@
-class Zone < ApplicationRecord
-  belongs_to :facility
-  has_many :points
+class Zone
+  include Mongoid::Document
+  field :name, type: String
 end
