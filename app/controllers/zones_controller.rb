@@ -5,7 +5,6 @@ class ZonesController < ApplicationController
   # GET /zones.json
   def index
     @zones = Zone.all
-    render json: @zones
   end
 
   # GET /zones/1

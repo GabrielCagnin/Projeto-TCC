@@ -1,4 +1,14 @@
 GIT
+  remote: git://github.com/gonzalo-bulnes/simple_token_authentication.git
+  revision: 7cca58547417f42de36f193d3e9a610813dc206f
+  branch: master
+  specs:
+    simple_token_authentication (1.13.0)
+      actionmailer (>= 3.2.6, < 5)
+      actionpack (>= 3.2.6, < 5)
+      devise (>= 3.2, < 5)
+
+GIT
   remote: git://github.com/mongodb/mongoid.git
   revision: 5e6e13fb37e89416066821bd0baf84534ca32d1c
   specs:
@@ -6,6 +16,18 @@ GIT
       activemodel (>= 5.0.0.rc1)
       mongo (~> 2.2)
       tzinfo (>= 0.3.37)
+
+GIT
+  remote: git://github.com/plataformatec/devise.git
+  revision: ac702843ddaa5652fde7a0050ff2378e7368149e
+  branch: master
+  specs:
+    devise (4.1.0)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0, < 5.1)
+      responders
+      warden (~> 1.2.3)
 
 GEM
   remote: https://rubygems.org/
@@ -48,6 +70,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.0.0)
+    bcrypt (3.1.11)
     bson (4.1.1)
     builder (3.2.2)
     byebug (9.0.5)
@@ -56,6 +79,7 @@ GEM
     ffi (1.9.10)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    hashie (3.4.3)
     i18n (0.7.0)
     jbuilder (2.5.0)
       activesupport (>= 3.0.0, < 5.1)
@@ -81,6 +105,10 @@ GEM
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
+    omniauth (1.3.1)
+      hashie (>= 1.2, < 4)
+      rack (>= 1.0, < 3)
+    orm_adapter (0.5.0)
     pkg-config (1.1.7)
     puma (3.4.0)
     rack (2.0.0.rc1)
@@ -117,6 +145,8 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    responders (2.2.0)
+      railties (>= 4.2.0, < 5.1)
     spring (1.7.1)
     spring-watcher-listen (2.0.0)
       listen (>= 2.7, < 4.0)
@@ -132,6 +162,8 @@ GEM
     thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    warden (1.2.6)
+      rack (>= 1.0)
     websocket-driver (0.6.4)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
@@ -141,11 +173,14 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  devise!
   jbuilder (~> 2.0)
   listen (~> 3.0.5)
   mongoid!
+  omniauth
   puma (~> 3.0)
   rails (>= 5.0.0.rc1, < 5.1)
+  simple_token_authentication!
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
