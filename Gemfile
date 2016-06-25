@@ -23,9 +23,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # MongoDB adapter
-gem 'mongoid', :github => 'mongodb/mongoid'
+gem 'mongoid', github: 'mongodb/mongoid'
 
 # Authentication gems
 gem 'omniauth'
-gem 'devise', :github => 'plataformatec/devise', :branch => 'master'
+gem 'devise', github: 'plataformatec/devise', :branch => 'master'
 gem 'simple_token_authentication', github: 'gonzalo-bulnes/simple_token_authentication', branch: 'master'
