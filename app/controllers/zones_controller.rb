@@ -17,11 +17,16 @@ class ZonesController < ApplicationController
   def create
     @zone = Zone.new(zone_params)
 
-    if @zone.save
-      render :show, status: :created, location: @zone
+    if Zone.where(name: @zone.name).exists?
+      render json: 'Facility name "'+@zone.name+'" already exists', status: :not_acceptable
     else
-      render json: @zone.errors, status: :unprocessable_entity
+      if @zone.save
+        render json: @zone, status: :created
+      else
+        render json: @zone.errors, status: :unprocessable_entity
+      end
     end
+
   end
 
   # PATCH/PUT /zones/1
