@@ -1,24 +1,42 @@
-# README
+# net.map HTTP Server API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This API-only rails app serves as data storage and user login service for net.map services.
 
-Things you may want to cover:
+## Login 
+To request a login, aim a POST request at:
+`/users/sign_in`
 
-* Ruby version
+Header MUST have:
+`Content-Type: application/json`
 
-* System dependencies
+JSON Content:
+```json
+{
+    "user":{
+        "email":"test@net.map",
+        "password":"12345678"
+    }
+}
+```
+  
+**Response** will be like this:
+```json
+{
+    "_id":{"$oid":"xxxxxxxxxxxxxxxxxxxxxxxx"},
+    "authentication_token":"xxxxxxxxxxxxxxxxxxxxxxxx",
+    "created_at":"2016-06-25T21:36:58.070Z",
+    "email":"test@net.map",
+    "updated_at":"2016-07-06T18:48:40.560Z"
+}
+```
 
-* Configuration
+You will need to save the email and the authentication token to perform a request.
 
-* Database creation
+## Making requests
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+In every request, your header must be like this:
+```
+Content-Type: application/json
+X-User-Email: test@net.map
+X-User-Token: xxxxxxxxxxxxxxxxxxxx
+```
