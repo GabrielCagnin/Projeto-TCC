@@ -4,10 +4,14 @@ This API-only rails app serves as data storage and user login service for net.ma
 
 ## Login 
 To request a login, aim a POST request at:
-`/users/sign_in`
+```
+/users/sign_in
+```
 
 Header MUST have:
-`Content-Type: application/json`
+```
+Content-Type: application/json
+```
 
 JSON Content:
 ```json
