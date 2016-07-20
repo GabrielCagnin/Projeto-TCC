@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf7a9db0-5c08-4637-8770-53046059feb0" name="Default" comment="Everything anwers in JSON; Can perform login">
+    <list default="true" id="cf7a9db0-5c08-4637-8770-53046059feb0" name="Default" comment="readme format">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/facility.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/controllers/zones_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/facilities_controller.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/zones/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/facilities/index.json.jbuilder" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/zones/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/facilities/show.json.jbuilder" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.json" afterPath="$PROJECT_DIR$/test.json" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -24,8 +30,8 @@
     <SUITE FILE_PATH="coverage/server_api@routes__server_api.coverage" NAME="routes: server_api Coverage Results" MODIFIED="1466892654285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_api" />
     <SUITE FILE_PATH="coverage/server_api@db_drop__server_api.coverage" NAME="db:drop: server_api Coverage Results" MODIFIED="1458851652959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_api" />
     <SUITE FILE_PATH="coverage/server_api@db_create__server_api.coverage" NAME="db:create: server_api Coverage Results" MODIFIED="1466030307650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_api" />
-    <SUITE FILE_PATH="coverage/server_api@db_reset__server_api.coverage" NAME="db:reset: server_api Coverage Results" MODIFIED="1466890616925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_api" />
-    <SUITE FILE_PATH="coverage/server_api@Development__server_api.coverage" NAME="Development: server_api Coverage Results" MODIFIED="1468267821077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_api" />
+    <SUITE FILE_PATH="coverage/server_api@db_reset__server_api.coverage" NAME="db:reset: server_api Coverage Results" MODIFIED="1468976814187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_api" />
+    <SUITE FILE_PATH="coverage/server_api@Development__server_api.coverage" NAME="Development: server_api Coverage Results" MODIFIED="1468977156923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_api" />
     <SUITE FILE_PATH="coverage/server_api@Production__server_api.coverage" NAME="Production: server_api Coverage Results" MODIFIED="1458178973533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_api" />
     <SUITE FILE_PATH="coverage/server_api@db_setup__server_api.coverage" NAME="db:setup: server_api Coverage Results" MODIFIED="1458851664419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_api" />
     <SUITE FILE_PATH="coverage/server_api@Rails_console__server_api.coverage" NAME="Rails console: server_api Coverage Results" MODIFIED="1466633916886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="server_api" />
@@ -48,21 +54,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="access_point.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/access_point.rb">
+      <file leaf-file-name="facilities_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/facilities_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
-              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="Development/server_api_development/facilities" pinned="false" current-in-tab="true">
+        <entry file="mongo://Development/server_api_development/facilities">
+          <provider selected="true" editor-type-id="MongoData">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zone.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/zone.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+            <state relative-caret-position="18">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="5" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="facility.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/facility.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -74,6 +127,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Ruby Class Template" />
       </list>
     </option>
   </component>
@@ -92,6 +146,9 @@
     </option>
     <option name="FORCE_PUSH_ALLOWED" value="true" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://restClient/response539.json" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -105,11 +162,9 @@
         <option value="$PROJECT_DIR$/db/migrate/20160318215738_devise_token_auth_create_users.rb" />
         <option value="$PROJECT_DIR$/json" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/models/facility.rb" />
         <option value="$PROJECT_DIR$/json.json" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/config/initializers/devise_token_auth.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/facilities_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/access_point.rb" />
         <option value="$PROJECT_DIR$/app/models/measure.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20160511205036_create_access_points.rb" />
@@ -117,18 +172,23 @@
         <option value="$PROJECT_DIR$/app/controllers/measures_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/points_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/access_points_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/zones_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/zone.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/controllers/registrations_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/app/controllers/zones_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/facilitiess_controller.rb" />
+        <option value="$PROJECT_DIR$/config/mongoid.yml" />
+        <option value="$PROJECT_DIR$/test.json" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/models/facility.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/facilities_controller.rb" />
       </list>
     </option>
   </component>
@@ -176,6 +236,37 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="server_api">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="server_api">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="config">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
       <pane id="Scratches">
         <subPane>
           <PATH>
@@ -270,37 +361,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="server_api">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="server_api">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="config">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,6 +378,562 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://0.0.0.0:3000" />
+          <option name="urlPath" value="/facilities" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Token" />
+                <option name="value" value="zhtyS2dvcFH3cL5ptyy9" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Email" />
+                <option name="value" value="test@net.map" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="578eceaf0fc45b5007194411" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://0.0.0.0:3000" />
+          <option name="urlPath" value="/create_facility" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Token" />
+                <option name="value" value="zhtyS2dvcFH3cL5ptyy9" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Email" />
+                <option name="value" value="test@net.map" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveFileToSend" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://0.0.0.0:3000" />
+          <option name="urlPath" value="/create_facility" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Token" />
+                <option name="value" value="zhtyS2dvcFH3cL5ptyy9" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Email" />
+                <option name="value" value="test@net.map" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="578eceaf0fc45b5007194411" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://0.0.0.0:3000" />
+          <option name="urlPath" value="/facilities" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Token" />
+                <option name="value" value="zhtyS2dvcFH3cL5ptyy9" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Email" />
+                <option name="value" value="test@net.map" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="578eb23c0fc45b3ad64489cc" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://0.0.0.0:3000" />
+          <option name="urlPath" value="/facilities" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Token" />
+                <option name="value" value="XiyvKvX2w9zScboFm3ei" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Email" />
+                <option name="value" value="test@net.map" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="578eb23c0fc45b3ad64489cc" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://0.0.0.0:3000" />
+          <option name="urlPath" value="/facilities" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Token" />
+                <option name="value" value="XiyvKvX2w9zScboFm3ei" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Email" />
+                <option name="value" value="test@net.map" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://0.0.0.0:3000" />
+          <option name="urlPath" value="/facilities" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Token" />
+                <option name="value" value="XiyvKvX2w9zScboFm3ei" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Email" />
+                <option name="value" value="test@net.map" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://0.0.0.0:3000" />
+          <option name="urlPath" value="/create_facility" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Token" />
+                <option name="value" value="XiyvKvX2w9zScboFm3ei" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Email" />
+                <option name="value" value="test@net.map" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveFileToSend" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://0.0.0.0:3000" />
+          <option name="urlPath" value="/create_facility.json" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Token" />
+                <option name="value" value="XiyvKvX2w9zScboFm3ei" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Email" />
+                <option name="value" value="test@net.map" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveFileToSend" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://0.0.0.0:3000" />
+          <option name="urlPath" value="/create_zone" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Token" />
+                <option name="value" value="XiyvKvX2w9zScboFm3ei" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Email" />
+                <option name="value" value="test@net.map" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveFileToSend" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://0.0.0.0:3000" />
+          <option name="urlPath" value="/users/sign_in" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveFileToSend" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://0.0.0.0:3000" />
+          <option name="urlPath" value="/users/sign_in" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://0.0.0.0:3000" />
+          <option name="urlPath" value="/users/sign_in" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Email" />
+                <option name="value" value="test@net.map" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://0.0.0.0:3000" />
+          <option name="urlPath" value="/users/sign_in" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Email" />
+                <option name="value" value="test@net.map" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Token" />
+                <option name="value" value="uQ_rBAbieZyAUnpETzJ5" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://0.0.0.0:3000" />
+          <option name="urlPath" value="/user/sign_in" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Email" />
+                <option name="value" value="test@net.map" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Token" />
+                <option name="value" value="uQ_rBAbieZyAUnpETzJ5" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://0.0.0.0:3000" />
+          <option name="urlPath" value="/create_facility" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Email" />
+                <option name="value" value="test@net.map" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Token" />
+                <option name="value" value="uQ_rBAbieZyAUnpETzJ5" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://0.0.0.0:3000" />
+          <option name="urlPath" value="/facility" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Email" />
+                <option name="value" value="test@net.map" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Token" />
+                <option name="value" value="uQ_rBAbieZyAUnpETzJ5" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://0.0.0.0:3000" />
+          <option name="urlPath" value="/zones" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Email" />
+                <option name="value" value="test@net.map" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Token" />
+                <option name="value" value="uQ_rBAbieZyAUnpETzJ5" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://52.67.105.105:3000" />
+          <option name="urlPath" value="/zones" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Email" />
+                <option name="value" value="test@net.map" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Token" />
+                <option name="value" value="uQ_rBAbieZyAUnpETzJ5" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://52.67.105.105:3000" />
+          <option name="urlPath" value="/zones" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Email" />
+                <option name="value" value="test@net.mapa" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Token" />
+                <option name="value" value="uQ_rBAbieZyAUnpETzJ5" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://52.67.105.105:3000" />
+          <option name="urlPath" value="/zones" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Email" />
+                <option name="value" value="test@net.map" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-User-Token" />
+                <option name="value" value="uQ_rBAbieZyAUnpETzJ5" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveFileToSend" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://52.67.105.105:3000" />
+          <option name="urlPath" value="/users/sign_in" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveFileToSend" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://0.0.0.0:3000" />
+          <option name="urlPath" value="/users/sign_in" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveFileToSend" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$PROJECT_DIR$/test.json" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://localhost:3000" />
@@ -1009,505 +1625,6 @@
           <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;test@nset.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="_session_id" />
-                <option name="path" value="/" />
-                <option name="value" value="S3ZzbXJxYWpiR0NVYTN6TXpBeHJvS2VrWjZzMWcxOXVySldwWk9Ma1VvdFQyTVlreG1YTU9JektDYUtTM2FCcWNPdlp2MkFINTd3WXJjSkhUZnBpMDNzNzFWZjZJVFZqVCszRkorZU8zYUI3REduLzl0VTBOT0wwZktPMzZId0xOTW5JZFZlZjlIYkg0aXU1SHRGYkU5YUExQ3ViZ2RHRnpwZmpkanlOUTBCZUxtaWZIVDNuRllLbkVvU01ja1BzSEpwU2pZQlhOS1hVR0sxR0F6WEJTQT09LS14ckUxN1QrdmZuUjFqc2s0QVliSkpnPT0%3D--602f5d943cab6aef264ca74a2715fffd8824a9ca" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;test@nset.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="_session_id" />
-                <option name="path" value="/" />
-                <option name="value" value="NWM2OE01cjdVRG5QYnlKUGpUUkRINjYrWmxqZHdOVDhHOHVQelMyMC9uN1NxTzRsZlBoOXFZdlhZbERHdzBobEJwanpDL0ZQc0pzcGRtWHJLaWpCaHNhOEI4YVdYVUlrK25kVG9wL3dDalBqTUtQUE05bmpXRFUvSWN6UW1TcTJhdGd2aHJjdUhXeW12amNsNjhscEp3WmsvZHFwRkgwWHNtWVZ2bE00eGl0aXJ1d2MydlZxSVdwS2krTlBGSVVpbGgxQ3dPK0FxWXdJd1pKZ1BiSEpyQT09LS01UnJFVHZ0eXo4bjRCNXFrZENtSzJ3PT0%3D--d96250eadcc86144d02605c9a78053e95fd7d9f1" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;teast@net.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="_session_id" />
-                <option name="path" value="/" />
-                <option name="value" value="KzQ4blgwTDlXaFBwVUhPaExNbHRpVFNJb1F2VjRmWUdWTzBpRklWV0tpcVQ0M2xCa0RyMERFUFRYWVF6aHgvYTJ4SDNNRjdwWFRReUtzWUtOS2dzQXBOOTdIVEpZME5kWGJWU2c2WTdKRnZNd0JZSW1vQ3l4SWZCdXBxYkN0anREVmIwQ1ZxYXZzM24yM1BXOFlJY1ZxYStJNmJzbVJZdTlIc2JYaDBmNmFaUWsrbnBPaXNNQ0hvRWMrQ3czWU1ZNis1TmpKUzNsVDJGWjRRa1BiUXNUdz09LS16YXBEenFmQkdicVFFMWJEbVJlQkFBPT0%3D--2c52874e818d8be79544c0e4af7f4f173e2eff79" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;teast@net.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="_session_id" />
-                <option name="path" value="/" />
-                <option name="value" value="YUNGMjNuK2xveVVDSmNDWVREOGlHYUUzZDAxQ1Nyd3VwTzF3K3Qxa3FndjRZVTEvaFErMy9QZUIyUWVFTjV3eUVSb0NTbmNRWlNaZFBhNVZJK0h2QThKblIvTlA2aWVicHpZOHFublZVS0ttN3NLWU1oUzR2cUdFV00wYVM4dm1xOVBmWUNLcWJzQ3JZaU1hcWFPczUyaDNGNU1MRDBUbCs3RDZQZTRvUE1LVzRFeHVaNEZBMVVBS1dVTUtZNSt6QS91TGJiSytSamVDdEpSYWhmSnVSZz09LS1HS0xSQmNlR1MrYzVJdGNpV0ZDZzhnPT0%3D--6aabe8bbf6fbe3df287f37ca070730708a6a568d" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;teast@net.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="_session_id" />
-                <option name="path" value="/" />
-                <option name="value" value="V1ZHM1RuNEliK3JxTnpuRXMxSis5LzQrWWVyNUhvcXZ0R3lsYkRmTmVJeWFRY0RObmtIUVVUdlBxQlM5V2twakV5Nm1ZZ2hnTTc3cjdmT0FHVXNvcHNLNy9yeUNnOVZndUtkV3hPdTc2UjRFV2Y2ZVpURzY2S2x6TzQzb2loMVpXNjBBbVZ0RHNtWHFCN0dDV3N1WWEvRnQ0dFlGbzI4QlozbVZoM0V1RWVTaXF5dDZOajlGWGxlcDNzVTVqVFgwUW9QbkkrQTE0QlJKNmRYUXhjVXhyQT09LS1SSGUvdlJNV0dhSVQ5ZnpJK2VIdXBnPT0%3D--6b15566b00f05a615f36015c48dd13285043af04" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;teast@net.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="_session_id" />
-                <option name="path" value="/" />
-                <option name="value" value="VFE4c1d6SVIzejFreGpUYWlGMFA4WlJaMUNldXVGRVg5M1dNa1RTMVFSSXE3ZXRIVnhHZE5Nb01aZjJNMGd1U01tcVhWM2VDM1IyTWRUY0E4ZEtLOFBPNXYzbWlkOGJCWmhpNFJoZmE1cm9vNmhZNzcyTGJNOHVpYXB5OXFPdjk5Yml3a3dMdWwvcE1IR0RUZWx0NjFpdDBmZ3NKVkpIOHV0eWFGQ2lXelRuL2M5anMyV0JrTktJMFFYaURGb1VJcnphMlRsWUpwaldoWEFLank0enovZz09LS1rUG12dlMxbXZMbmxpTkExc1F5bGpBPT0%3D--8a4a2cf6bdb802ce1daccd3b7019f0c8058b0c88" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;teast@net.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="_session_id" />
-                <option name="path" value="/" />
-                <option name="value" value="NnF0eWhBdUJTLzdpRGk3ZUhNMjRiWHJ2NmpMdEdOb3Rxb0VXSGhIVlgxdGRJVXg5bFlUYmdoNTJ2OFAxZjEzY1kyQ1BuUXp1SmVnMGFaSXYyTGNGYng1R3hWL2FyNzdXLzY5QUQyM2tPN2k4MTFJN1hMTDFVd1FGR2dmQWExdVRkdVJIbjJlVlR6SmdaSkgweS9iTW1YdjRHVUFITldidlJiOHdNeStHSlUzVkU3WHIxaFhGNjVHandkWTZJaWRNOG9OQVBud3ZqaHdPTHo5eTRtRzJlZz09LS1melk4V3Jrc21NK0MvSHhhY2wybk5nPT0%3D--ded7cebe05873ef33acff3888d66d3da2b964505" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;teast@net.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="_session_id" />
-                <option name="path" value="/" />
-                <option name="value" value="ZG85dmtUUzcrL1AwQkJtVDllbmZSQUxpRnFqZGtPRUZCUDd0QjBjdVJFSHgwTExJdHpaWmVFU1M4Z25tSjVkazlqWkF6VjNQZldydlYzL1ExTkQ2TktacDRpRkxEeUhLSXlTaHBxU0kwLzBjNU05RUgzODJlZi9LSEN4clhNU2h2MlU5WjV6eVdIWlRITDJPUjEzTkVnNDdZOUN0d3BDMllsMXBGd3JuRnoyTlUzQXBGMjh0b25tTk02YUVpdUhUOHNVZ1pPSGlIL3l6aW00WmdISkt4Zz09LS1YUTFNWHg3UWdLbTNEL2ZpczhIM0dRPT0%3D--e46a49c2fa6dbd604097a7e178668319f537bf75" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;teast@net.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="_session_id" />
-                <option name="path" value="/" />
-                <option name="value" value="NXpaQ09wUEVKZEZIdFBjeGJaajNCNEZpVDBDZ3dTajQ5OGh3ZWx6QysxSDUvZGx5Vkx3K0pFdXh1alFEQVZ6d09RU3hndm9zZXFPYW44aXpmUlZLM2hwSUlCKzR3V3VQZ01VUk9TSzQ4cGo4TUIvYTZDMHpCM1pXZ3VVNWRVY0VSWmhwWXVGK0lkT0k0L2o1SnlqRFJZaEJSN1FxNmtaaURRQWVqNEZsdGJqWjgxVjZLenAzeWcrQmFxdDJRdEJvV1p3MFN1L2poOG9xNlUrM1BFRGdLQT09LS1xL2huc2FOS29VbzJtWWpSdlJCOEFRPT0%3D--94292ec1f2895d30de4f869df902c149325a8527" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;teast@net.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="_session_id" />
-                <option name="path" value="/" />
-                <option name="value" value="RUtFTGhRNjVOMEtmcnBMSW5mZ1ljZkNKOS81ZDhUSWJZOVBiR1FlZWp0eE4xeU9IU2dYQ0hyUUgrSE1sTkFVLzltUUFOdlBJa1hUVTZIV1JFQ21JZFdRVW95dEdFSGxTSEczM2NIRFNzNVFycm1zOHo1bzhqTWNNLzZoN2RQaE0rWjM0VngzdUFlbmV4b1p2cW05QkRYa3lWTWRaV2RsbDNmS2pTeEg0VjdKcFhPOUpSaHhIRWxYZjdDODNtK0VmL1VBSnJsL3lDenJpUDlRY29NblVUdz09LS1xSm1pdWp5UkEwb0w2eTlReDBGK1JRPT0%3D--a333b61e724e99996cdfc3b1ca6e49336557df5d" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;test@net.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;test@net.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;taest@net.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;taest@net.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;teast@net.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;tefst@net.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;thest@net.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;tsest@net.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;tehst@net.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;tst@net.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;tedst@net.map&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;:{&quot;email&quot;:&quot;sjors@purpledunes.com&quot;,&quot;password&quot;:&quot;12345678&quot;}}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:3000" />
-          <option name="urlPath" value="/users/sign_in/" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="application/json" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="X-User-Email" />
-                <option name="value" value="test@net.map" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="X-User-Password" />
-                <option name="value" value="12345678" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="{&quot;user&quot;: {&quot;email&quot;: &quot;test@net.map&quot;, &quot;password&quot;: &quot;12345678&quot;}}" />
-          <option name="filesToSend" value="$PROJECT_DIR$/json.json" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -1892,7 +2009,13 @@
       <workItem from="1468253298653" duration="5000" />
       <workItem from="1468263585477" duration="1853000" />
       <workItem from="1468281869483" duration="36000" />
-      <workItem from="1468281913853" duration="13000" />
+      <workItem from="1468281913853" duration="56000" />
+      <workItem from="1468433567726" duration="12000" />
+      <workItem from="1468433591773" duration="15000" />
+      <workItem from="1468435128292" duration="21000" />
+      <workItem from="1468790454522" duration="1067000" />
+      <workItem from="1468792568568" duration="59000" />
+      <workItem from="1468961850996" duration="9826000" />
     </task>
     <task id="LOCAL-00001" summary="v0.1.2&#10;Can select all facilities per user">
       <created>1458179923617</created>
@@ -2013,11 +2136,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466893040256</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="readme format">
+      <created>1468281960402</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1468281960402</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48645000" />
+    <option name="totallyTimeSpent" value="59688000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2030,28 +2160,28 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="30" width="1922" height="1051" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22097977" sideWeight="0.4942029" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.372043" sideWeight="0.5042598" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328541" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28494623" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.122470714" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12216956" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37096775" sideWeight="0.49574015" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28387097" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2376344" sideWeight="0.49574015" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.115548454" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22097977" sideWeight="0.4942029" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328541" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.122470714" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3232162" sideWeight="0.5057971" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39892474" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3268817" sideWeight="0.4978701" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.372043" sideWeight="0.49574015" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23870967" sideWeight="0.49574015" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979124" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2105,14 +2235,15 @@
     <MESSAGE value="Restarted project as Rails 5.0.0RC1 and using Mongoid" />
     <MESSAGE value="Using Devise and simple_token_authentication" />
     <MESSAGE value="Everything anwers in JSON; Can perform login" />
-    <option name="LAST_COMMIT_MESSAGE" value="Everything anwers in JSON; Can perform login" />
+    <MESSAGE value="readme format" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme format" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2127,13 +2258,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="324">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/access_point.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2141,15 +2272,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/access_point.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/access_point.rb">
+    <entry file="file://$PROJECT_DIR$/test.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2169,6 +2292,206 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/access_point.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/access_point.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/access_point.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/access_point.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/access_point.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/access_point.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/access_point.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/access_point.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/access_point.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/mongoid.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/facility.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/zone.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/facilities_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
           <folding />
         </state>
       </provider>
