@@ -3,11 +3,7 @@ class FacilitiesController < ApplicationController
 
   # GET /facilities
   def show_all
-    if params[:user_id] == current_user.id.to_s
-      render json: current_user.facilities
-    else
-      render json: 'You can not access this resources'
-    end
+    render json: current_user.facilities
   end
 
   # POST /create_facility
