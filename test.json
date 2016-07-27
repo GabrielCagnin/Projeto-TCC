@@ -1,5 +1,6 @@
 {
-  "facility": {
-    "name": "Shopping Beta"
+  "zone": {
+    "name": "Toy store",
+    "facility_id": "578ed12d0fc45b517eb014cc"
   }
 }
