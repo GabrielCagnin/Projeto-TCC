@@ -1,5 +1,4 @@
 class FacilitiesController < ApplicationController
-  before_action :set_facility, only: [:show]
 
   # GET /facilities
   def show_all

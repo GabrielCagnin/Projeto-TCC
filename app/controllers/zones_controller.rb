@@ -1,21 +1,30 @@
 class ZonesController < ApplicationController
-  before_action :set_facility, only: [:show]
 
   # GET /zone
   def show_all
-    render json: @parent_facility.zones
+    parent_facility_id = params[:facility_id]
+
+    if parent_facility_id == nil
+      render json: ('Include facility_id parameter in the request'), status: :not_acceptable
+    elsif !Facility.where(id: parent_facility_id).exists?
+      render json: ('Facility with id "'+parent_facility_id+'" do not exists'), status: :not_acceptable
+    else
+      render json: Facility.find(parent_facility_id).zones
+    end
+
+
   end
 
   # POST /create_zone
   def create_zone
     @zone = Zone.new(zone_params)
 
-    @parent_facility = @zone.facility
+    parent_facility = @zone.facility
 
-    if @parent_facility == nil
+    if parent_facility == nil
       render json: ('Facility with id "'+@zone.facility_id+'" do not exists'), status: :not_acceptable
     else
-      if @parent_facility.zones.where(name: @zone.name).exists?
+      if parent_facility.zones.where(name: @zone.name).exists?
         render json: ('Zone name "'+@zone.name+'" already exists'), status: :not_acceptable
       else
         if @zone.save
@@ -32,7 +41,7 @@ class ZonesController < ApplicationController
 
   private
   # Use callbacks to share common setup or constraints between actions.
-  def set_facility
+  def set_zone
     @zone = Zone.find(params[:id])
   end
 
