@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf7a9db0-5c08-4637-8770-53046059feb0" name="Default" comment="Creates zones methods, already working">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/facilities_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/facilities_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/zones_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/zones_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-    </list>
+    <list default="true" id="cf7a9db0-5c08-4637-8770-53046059feb0" name="Default" comment="Creates zones methods, already working" />
     <ignored path=".idea/dataSources.local.xml" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -2007,7 +2002,7 @@
       <workItem from="1469138596488" duration="3408000" />
       <workItem from="1469325656286" duration="4000" />
       <workItem from="1469649017565" duration="6567000" />
-      <workItem from="1469662784974" duration="1398000" />
+      <workItem from="1469662784974" duration="1404000" />
     </task>
     <task id="LOCAL-00001" summary="v0.1.2&#10;Can select all facilities per user">
       <created>1458179923617</created>
@@ -2156,11 +2151,18 @@
       <option name="project" value="LOCAL" />
       <updated>1469656106088</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Creates zones methods, already working">
+      <created>1469664186806</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1469664186806</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76767000" />
+    <option name="totallyTimeSpent" value="76773000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
