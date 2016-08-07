@@ -26,6 +26,8 @@ class ZonesController < ApplicationController
     else
       if parent_facility.zones.where(name: @zone.name).exists?
         render json: ('Zone name "'+@zone.name+'" already exists'), status: :not_acceptable
+      elsif @zone.name.blank?
+        render json: ('Zone name can not be blank'), status: :not_acceptable
       else
         if @zone.save
           render json: @zone, status: :created

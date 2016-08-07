@@ -13,6 +13,8 @@ class FacilitiesController < ApplicationController
 
     if Facility.where(name: @facility.name).exists?
       render json: ('Facility name "'+@facility.name+'" already exists'), status: :not_acceptable
+    elsif @facility.name.blank?
+      render json: ('Facility name can not be blank'), status: :not_acceptable
     else
       if @facility.save
         render json: @facility, status: :created
