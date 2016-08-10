@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :acquisition_sets
   devise_for :users, defaults: {format: :json}
 
   post '/create_facility', to: 'facilities#create_facility', defaults: {format: :json}

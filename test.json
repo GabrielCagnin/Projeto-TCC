@@ -1,6 +1,6 @@
 {
-  "zone": {
-    "name": "Toy store",
-    "facility_id": "57911fa319e3c107ec5c08d1"
+  "user": {
+    "email": "test@net.map",
+    "password": "12345678"
   }
 }

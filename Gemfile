@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.0.0.rc2'
+gem 'rails', '5.0.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 
-gem 'active_model_serializers', github: 'rails-api/active_model_serializers'
+#gem 'active_model_serializers', github: 'rails-api/active_model_serializers'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -32,4 +32,4 @@ gem 'mongoid', github: 'mongodb/mongoid'
 # Authentication gems
 gem 'omniauth'
 gem 'devise', github: 'plataformatec/devise', tag: 'v4.1.1'
-gem 'simple_token_authentication', github: 'gonzalo-bulnes/simple_token_authentication', tag: 'v1.13.0'
+gem 'simple_token_authentication', github: 'gonzalo-bulnes/simple_token_authentication', tag: 'v1.14.0'
