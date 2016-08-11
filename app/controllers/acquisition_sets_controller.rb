@@ -1,43 +1,14 @@
 class AcquisitionSetsController < ApplicationController
-  before_action :set_acquisition_set, only: [:show, :update, :destroy]
+  before_action :set_acquisition_set, only: [:show]
 
-  # GET /acquisition_sets
-  # GET /acquisition_sets.json
-  def index
-    @acquisition_sets = AcquisitionSet.all
-  end
-
-  # GET /acquisition_sets/1
-  # GET /acquisition_sets/1.json
   def show
+    render json: @acquisition_set
   end
 
-  # POST /acquisition_sets
-  # POST /acquisition_sets.json
-  def create
-    @acquisition_set = AcquisitionSet.new(acquisition_set_params)
 
-    if @acquisition_set.save
-      render :show, status: :created, location: @acquisition_set
-    else
-      render json: @acquisition_set.errors, status: :unprocessable_entity
-    end
-  end
+  # It must create new entries for all the sub-nested resources (points and its access points)
+  def create_set
 
-  # PATCH/PUT /acquisition_sets/1
-  # PATCH/PUT /acquisition_sets/1.json
-  def update
-    if @acquisition_set.update(acquisition_set_params)
-      render :show, status: :ok, location: @acquisition_set
-    else
-      render json: @acquisition_set.errors, status: :unprocessable_entity
-    end
-  end
-
-  # DELETE /acquisition_sets/1
-  # DELETE /acquisition_sets/1.json
-  def destroy
-    @acquisition_set.destroy
   end
 
   private

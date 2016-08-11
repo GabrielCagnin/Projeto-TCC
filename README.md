@@ -44,3 +44,74 @@ Content-Type: application/json
 X-User-Email: test@net.map
 X-User-Token: xxxxxxxxxxxxxxxxxxxx
 ```
+
+### Create new Acquisition Set
+POST to `/create_acquisition_set`
+```json
+{
+  "acquisition_set": {
+    "zone_id": "xxxxxxxxxxxxxx",
+    "normalization_algorithm": "Kalman Filter",
+    "time_interval": 0.5,
+    "measures_per_point": 3,
+    "acquisitions": [
+      {
+        "access_points": [
+          {
+            "BSSID":"00:11:22:33:44:55",
+            "RSSI": -30
+          },
+
+          {
+            "BSSID":"AA:11:22:33:44:55",
+            "RSSI": -37
+          },
+
+          {
+            "BSSID":"BB:11:22:33:44:55",
+            "RSSI": -49
+          }
+        ]
+      },
+
+      {
+        "access_points": [
+          {
+            "BSSID":"00:11:22:33:44:55",
+            "RSSI": -39
+          },
+
+          {
+            "BSSID":"AA:11:22:33:44:55",
+            "RSSI": -48
+          },
+
+          {
+            "BSSID":"BB:11:22:33:44:55",
+            "RSSI": -33
+          }
+        ]
+      },
+
+      {
+        "access_points": [
+          {
+            "BSSID":"00:11:22:33:44:55",
+            "RSSI": -90
+          },
+
+          {
+            "BSSID":"AA:11:22:33:44:55",
+            "RSSI": -32
+          },
+
+          {
+            "BSSID":"BB:11:22:33:44:55",
+            "RSSI": -64
+          }
+        ]
+      }
+    ]
+  }
+}
+```

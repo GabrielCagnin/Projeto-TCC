@@ -20,8 +20,9 @@ class ZonesController < ApplicationController
     @zone = Zone.new(zone_params)
 
     parent_facility = @zone.facility
-
-    if parent_facility == nil
+    if @zone.facility_id == nil
+      render json: ('The request must contain facility_id'), status: :not_acceptable
+    elsif parent_facility == nil
       render json: ('Facility with id "'+@zone.facility_id+'" do not exists'), status: :not_acceptable
     else
       if parent_facility.zones.where(name: @zone.name).exists?
