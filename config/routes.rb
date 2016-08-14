@@ -1,18 +1,19 @@
 Rails.application.routes.draw do
-  mount_devise_token_auth_for 'User', at: 'auth'
 
-  get '/facilities/user/:user_id', to: 'facilities#show_user_facilities'
-  post '/facilities', to: 'facilities#create'
+  devise_for :users, defaults: {format: :json}
 
-  get '/zones/facility/:facility_id', to: 'zones#show_facility_zones'
-  post '/zones', to: 'zones#create'
+  post '/create_facility', to: 'facilities#create_facility', defaults: {format: :json}
+  get '/facilities', to: 'facilities#show_all', defaults: {format: :json}
 
-  get '/points/zone/:zone_id', to: 'points#show_zone_points'
-  post '/points', to: 'points#create'
+  post '/create_zone', to: 'zones#create_zone', defaults: {format: :json}
+  get '/zones', to: 'zones#show_all', defaults: {format: :json}
 
-  get '/measures/point/:point_id', to: 'measures#show_point_measures'
-  post '/measures', to: 'measures#create'
+  post '/create_acquisition_set', to: 'acquisition_sets#create_set', defaults: {format: :json}
+  get '/acquisition_set', to: 'acquisition_set#show', defaults: {format: :json}
 
-  get '/access_points/measure/:measure_id', to: 'access_points#show_measure_access_points'
-  post '/access_points', to: 'access_points#create'
+  get '/acquisition', to: 'acquisition#show', defaults: {format: :json}
+
+  # Shows all acquisitions from a zone passed as parameter
+  get '/acquisitions', to: 'acquisition#show_all', defaults: {format: :json}
+
 end

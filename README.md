@@ -1,24 +1,117 @@
-## README
+# net.map HTTP Server API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This API-only rails app serves as data storage and user login service for net.map services.
 
-Things you may want to cover:
+## Login 
+To request a login, aim a POST request at:
+```
+/users/sign_in
+```
 
-* Ruby version
+Header MUST have:
+```
+Content-Type: application/json
+```
 
-* System dependencies
+JSON Content:
+```json
+{
+    "user":{
+        "email":"test@net.map",
+        "password":"12345678"
+    }
+}
+```
+  
+**Response** will be like this:
+```json
+{
+    "_id":{"$oid":"xxxxxxxxxxxxxxxxxxxxxxxx"},
+    "authentication_token":"xxxxxxxxxxxxxxxxxxxxxxxx",
+    "created_at":"2016-06-25T21:36:58.070Z",
+    "email":"test@net.map",
+    "updated_at":"2016-07-06T18:48:40.560Z"
+}
+```
 
-* Configuration
+You will need to save the email and the authentication token to perform a request.
 
-* Database creation
+## Making requests
 
-* Database initialization
+In every request, your header must be like this:
+```
+Content-Type: application/json
+X-User-Email: test@net.map
+X-User-Token: xxxxxxxxxxxxxxxxxxxx
+```
 
-* How to run the test suite
+### Create new Acquisition Set
+POST to `/create_acquisition_set`
+```json
+{
+  "acquisition_set": {
+    "zone_id": "xxxxxxxxxxxxxx",
+    "normalization_algorithm": "Kalman Filter",
+    "time_interval": 0.5,
+    "measures_per_point": 3,
+    "acquisitions": [
+      {
+        "access_points": [
+          {
+            "BSSID":"00:11:22:33:44:55",
+            "RSSI": -30
+          },
 
-* Services (job queues, cache servers, search engines, etc.)
+          {
+            "BSSID":"AA:11:22:33:44:55",
+            "RSSI": -37
+          },
 
-* Deployment instructions
+          {
+            "BSSID":"BB:11:22:33:44:55",
+            "RSSI": -49
+          }
+        ]
+      },
 
-* ...
+      {
+        "access_points": [
+          {
+            "BSSID":"00:11:22:33:44:55",
+            "RSSI": -39
+          },
+
+          {
+            "BSSID":"AA:11:22:33:44:55",
+            "RSSI": -48
+          },
+
+          {
+            "BSSID":"BB:11:22:33:44:55",
+            "RSSI": -33
+          }
+        ]
+      },
+
+      {
+        "access_points": [
+          {
+            "BSSID":"00:11:22:33:44:55",
+            "RSSI": -90
+          },
+
+          {
+            "BSSID":"AA:11:22:33:44:55",
+            "RSSI": -32
+          },
+
+          {
+            "BSSID":"BB:11:22:33:44:55",
+            "RSSI": -64
+          }
+        ]
+      }
+    ]
+  }
+}
+```

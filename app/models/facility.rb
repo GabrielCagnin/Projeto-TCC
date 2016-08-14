@@ -1,5 +1,10 @@
-class Facility < ApplicationRecord
+class Facility
+  include Mongoid::Document
+  include Mongoid::Timestamps
+
+  belongs_to :user
   has_many :zones
-  has_many :facilities_users
-  has_many :users, through: :facilities_users
+
+  field :name, type: String
+  field :user_id, type: String
 end

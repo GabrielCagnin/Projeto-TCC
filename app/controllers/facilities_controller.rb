@@ -1,63 +1,39 @@
 class FacilitiesController < ApplicationController
-  before_action :set_facility, only: [:update, :destroy]
-  before_action :authenticate_user!, only: [:create]
 
-  # GET /facilities/user/:user_id
-  def show_user_facilities
-    user= User.where(id: params[:user_id]).first
-    facilities = user.facilities.order('name ASC')
-    render json: facilities
+  # GET /facilities
+  def show_all
+    render json: current_user.facilities
   end
 
+  # POST /create_facility
+  # POST /create_facility.json
+  def create_facility
+    @facility = Facility.new(facility_params)
+    @facility.user_id = current_user.id
 
-
-  # POST /facilities
-  def create
-    user_id=facility_params[:user_id]
-    if user_id.nil?
-      render body: 'No user id'
+    if Facility.where(name: @facility.name).exists?
+      render json: ('Facility name "'+@facility.name+'" already exists'), status: :not_acceptable
+    elsif @facility.name.blank?
+      render json: ('Facility name can not be blank'), status: :not_acceptable
     else
-      if User.find_by_id(user_id)
-        facility = Facility.new(name: facility_params[:name])
-        if Facility.where(name: facility_params[:name]).empty?
-          if facility.save
-            facility.users << User.find_by_id(user_id)
-            render body: "Facility '"+facility.name+"' was created.", status: :created
-          else
-            render body: 'Error: facility was not created', status: :unprocessable_entity
-          end
-        else
-          render body: "Facility '"+facility.name+"' already exists."
-        end
+      if @facility.save
+        render json: @facility, status: :created
       else
-        render body: 'User with id '+user_id.to_s+' does not exist'
+        render json: @facility.errors, status: :unprocessable_entity
       end
     end
 
   end
 
-  # PATCH/PUT /facilities/1
-  def update
-    if @facility.update(facility_params)
-      render json: @facility
-    else
-      render json: @facility.errors, status: :unprocessable_entity
-    end
-  end
-
-  # DELETE /facilities/1
-  def destroy
-    @facility.destroy
-  end
 
   private
   # Use callbacks to share common setup or constraints between actions.
-    def set_facility
-      @facility = Facility.find(params[:id])
-    end
+  def set_facility
+    @facility = Facility.find(params[:id])
+  end
 
-  # Only allow a trusted parameter "white list" through.
-    def facility_params
-      params.require(:facility).permit(:name, :user_id)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def facility_params
+    params.require(:facility).permit(:name)
+  end
 end
