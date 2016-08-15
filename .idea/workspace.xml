@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf7a9db0-5c08-4637-8770-53046059feb0" name="Default" comment="Updated README.md">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/server_api.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/access_points_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/access_points_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/acquisitions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/acquisitions_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -57,50 +52,50 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1371">
-                <caret line="266" column="0" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
+              <first_editor relative-caret-position="-1984">
+                <caret line="85" column="7" selection-start-line="85" selection-start-column="3" selection-end-line="85" selection-end-column="7" />
                 <folding>
-                  <marker date="1471300203874" expanded="true" signature="351:435" ph="{...}" />
-                  <marker date="1471300203874" expanded="true" signature="364:433" ph="{&quot;email&quot;: &quot;test@net.map&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="483:705" ph="{&quot;authentication_token&quot;: &quot;xxxxxxxxxxxxxxxxxxxxxxxx&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="1083:1133" ph="{...}" />
-                  <marker date="1471300203874" expanded="true" signature="1099:1131" ph="{&quot;name&quot;: &quot;New Facility&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="1330:1409" ph="{...}" />
-                  <marker date="1471300203874" expanded="true" signature="1342:1407" ph="{&quot;name&quot;: &quot;New Zone&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="1716:2886" ph="{...}" />
-                  <marker date="1471300203874" expanded="true" signature="1739:2884" ph="{&quot;zone_id&quot;: &quot;xxxxxxxxxxxxxx&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="1897:2880" ph="[...]" />
-                  <marker date="1471300203874" expanded="true" signature="1905:2222" ph="{...}" />
-                  <marker date="1471300203874" expanded="true" signature="1932:2214" ph="[...]" />
-                  <marker date="1471300203874" expanded="true" signature="1944:2022" ph="{&quot;BSSID&quot;: &quot;00:11:22:33:44:55&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="2035:2113" ph="{&quot;BSSID&quot;: &quot;AA:11:22:33:44:55&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="2126:2204" ph="{&quot;BSSID&quot;: &quot;BB:11:22:33:44:55&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="2231:2548" ph="{...}" />
-                  <marker date="1471300203874" expanded="true" signature="2258:2540" ph="[...]" />
-                  <marker date="1471300203874" expanded="true" signature="2270:2348" ph="{&quot;BSSID&quot;: &quot;00:11:22:33:44:55&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="2361:2439" ph="{&quot;BSSID&quot;: &quot;AA:11:22:33:44:55&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="2452:2530" ph="{&quot;BSSID&quot;: &quot;BB:11:22:33:44:55&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="2557:2874" ph="{...}" />
-                  <marker date="1471300203874" expanded="true" signature="2584:2866" ph="[...]" />
-                  <marker date="1471300203874" expanded="true" signature="2596:2674" ph="{&quot;BSSID&quot;: &quot;00:11:22:33:44:55&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="2687:2765" ph="{&quot;BSSID&quot;: &quot;AA:11:22:33:44:55&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="2778:2856" ph="{&quot;BSSID&quot;: &quot;BB:11:22:33:44:55&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="3155:3415" ph="[...]" />
-                  <marker date="1471300203874" expanded="true" signature="3159:3389" ph="{&quot;name&quot;: &quot;Feira da fruta&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="3172:3222" ph="{&quot;$oid&quot;: &quot;57b1dcf9052acc2307ae9a56&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="3393:3406" ph="{...}" />
-                  <marker date="1471300203874" expanded="true" signature="3574:3835" ph="[...]" />
-                  <marker date="1471300203874" expanded="true" signature="3578:3606" ph="{&quot;name&quot;: &quot;Feira da fruta&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="3578:3809" ph="{&quot;name&quot;: &quot;Carraca do Peixe&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="3591:3606" ph="{&quot;$oid&quot;: &quot;xxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="3813:3826" ph="{...}" />
-                  <marker date="1471300203874" expanded="true" signature="4047:4289" ph="[...]" />
-                  <marker date="1471300203874" expanded="true" signature="4051:4081" ph="{&quot;name&quot;: &quot;Main Lobby&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="4051:4280" ph="{&quot;acquisition_set_id&quot;: &quot;57b1dd42052acc2307ae9a58&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="4064:4081" ph="{&quot;$oid&quot;: &quot;yyyyyyyyyyyyyyyyyyyyyyyy&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="4640:4857" ph="[...]" />
-                  <marker date="1471300203874" expanded="true" signature="4644:4848" ph="{&quot;BSSID&quot;: &quot;00:11:22:33:44:55&quot;...}" />
-                  <marker date="1471300203874" expanded="true" signature="4708:4754" ph="{&quot;$oid&quot;: &quot;57b1dd42052acc2307ae9a5a&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="351:435" ph="{...}" />
+                  <marker date="1471300310125" expanded="true" signature="364:433" ph="{&quot;email&quot;: &quot;test@net.map&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="483:705" ph="{&quot;authentication_token&quot;: &quot;xxxxxxxxxxxxxxxxxxxxxxxx&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="1083:1133" ph="{...}" />
+                  <marker date="1471300310125" expanded="true" signature="1099:1131" ph="{&quot;name&quot;: &quot;New Facility&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="1330:1409" ph="{...}" />
+                  <marker date="1471300310125" expanded="true" signature="1342:1407" ph="{&quot;name&quot;: &quot;New Zone&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="1716:2886" ph="{...}" />
+                  <marker date="1471300310125" expanded="true" signature="1739:2884" ph="{&quot;zone_id&quot;: &quot;xxxxxxxxxxxxxx&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="1897:2880" ph="[...]" />
+                  <marker date="1471300310125" expanded="true" signature="1905:2222" ph="{...}" />
+                  <marker date="1471300310125" expanded="true" signature="1932:2214" ph="[...]" />
+                  <marker date="1471300310125" expanded="true" signature="1944:2022" ph="{&quot;BSSID&quot;: &quot;00:11:22:33:44:55&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="2035:2113" ph="{&quot;BSSID&quot;: &quot;AA:11:22:33:44:55&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="2126:2204" ph="{&quot;BSSID&quot;: &quot;BB:11:22:33:44:55&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="2231:2548" ph="{...}" />
+                  <marker date="1471300310125" expanded="true" signature="2258:2540" ph="[...]" />
+                  <marker date="1471300310125" expanded="true" signature="2270:2348" ph="{&quot;BSSID&quot;: &quot;00:11:22:33:44:55&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="2361:2439" ph="{&quot;BSSID&quot;: &quot;AA:11:22:33:44:55&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="2452:2530" ph="{&quot;BSSID&quot;: &quot;BB:11:22:33:44:55&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="2557:2874" ph="{...}" />
+                  <marker date="1471300310125" expanded="true" signature="2584:2866" ph="[...]" />
+                  <marker date="1471300310125" expanded="true" signature="2596:2674" ph="{&quot;BSSID&quot;: &quot;00:11:22:33:44:55&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="2687:2765" ph="{&quot;BSSID&quot;: &quot;AA:11:22:33:44:55&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="2778:2856" ph="{&quot;BSSID&quot;: &quot;BB:11:22:33:44:55&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="3151:3411" ph="[...]" />
+                  <marker date="1471300310125" expanded="true" signature="3155:3385" ph="{&quot;name&quot;: &quot;Feira da fruta&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="3168:3218" ph="{&quot;$oid&quot;: &quot;57b1dcf9052acc2307ae9a56&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="3389:3402" ph="{...}" />
+                  <marker date="1471300310125" expanded="true" signature="3566:3827" ph="[...]" />
+                  <marker date="1471300310125" expanded="true" signature="3570:3598" ph="{&quot;name&quot;: &quot;Feira da fruta&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="3570:3801" ph="{&quot;name&quot;: &quot;Carraca do Peixe&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="3583:3598" ph="{&quot;$oid&quot;: &quot;xxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="3805:3818" ph="{...}" />
+                  <marker date="1471300310125" expanded="true" signature="4035:4277" ph="[...]" />
+                  <marker date="1471300310125" expanded="true" signature="4039:4069" ph="{&quot;name&quot;: &quot;Main Lobby&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="4039:4268" ph="{&quot;acquisition_set_id&quot;: &quot;57b1dd42052acc2307ae9a58&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="4052:4069" ph="{&quot;$oid&quot;: &quot;yyyyyyyyyyyyyyyyyyyyyyyy&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="4624:4841" ph="[...]" />
+                  <marker date="1471300310125" expanded="true" signature="4628:4832" ph="{&quot;BSSID&quot;: &quot;00:11:22:33:44:55&quot;...}" />
+                  <marker date="1471300310125" expanded="true" signature="4692:4738" ph="{&quot;$oid&quot;: &quot;57b1dd42052acc2307ae9a5a&quot;...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -2099,7 +2094,7 @@
       <workItem from="1471178108488" duration="7582000" />
       <workItem from="1471211535156" duration="563000" />
       <workItem from="1471270670049" duration="5221000" />
-      <workItem from="1471286730688" duration="12668000" />
+      <workItem from="1471286730688" duration="12754000" />
     </task>
     <task id="LOCAL-00001" summary="v0.1.2&#10;Can select all facilities per user">
       <created>1458179923617</created>
@@ -2318,11 +2313,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471294947518</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Updated README.md">
+      <created>1471300231117</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1471300231117</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139790000" />
+    <option name="totallyTimeSpent" value="139876000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2371,7 +2373,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Point creation fixed" />
@@ -2765,50 +2766,50 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1371">
-            <caret line="266" column="0" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
+          <first_editor relative-caret-position="-1984">
+            <caret line="85" column="7" selection-start-line="85" selection-start-column="3" selection-end-line="85" selection-end-column="7" />
             <folding>
-              <marker date="1471300203874" expanded="true" signature="351:435" ph="{...}" />
-              <marker date="1471300203874" expanded="true" signature="364:433" ph="{&quot;email&quot;: &quot;test@net.map&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="483:705" ph="{&quot;authentication_token&quot;: &quot;xxxxxxxxxxxxxxxxxxxxxxxx&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="1083:1133" ph="{...}" />
-              <marker date="1471300203874" expanded="true" signature="1099:1131" ph="{&quot;name&quot;: &quot;New Facility&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="1330:1409" ph="{...}" />
-              <marker date="1471300203874" expanded="true" signature="1342:1407" ph="{&quot;name&quot;: &quot;New Zone&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="1716:2886" ph="{...}" />
-              <marker date="1471300203874" expanded="true" signature="1739:2884" ph="{&quot;zone_id&quot;: &quot;xxxxxxxxxxxxxx&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="1897:2880" ph="[...]" />
-              <marker date="1471300203874" expanded="true" signature="1905:2222" ph="{...}" />
-              <marker date="1471300203874" expanded="true" signature="1932:2214" ph="[...]" />
-              <marker date="1471300203874" expanded="true" signature="1944:2022" ph="{&quot;BSSID&quot;: &quot;00:11:22:33:44:55&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="2035:2113" ph="{&quot;BSSID&quot;: &quot;AA:11:22:33:44:55&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="2126:2204" ph="{&quot;BSSID&quot;: &quot;BB:11:22:33:44:55&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="2231:2548" ph="{...}" />
-              <marker date="1471300203874" expanded="true" signature="2258:2540" ph="[...]" />
-              <marker date="1471300203874" expanded="true" signature="2270:2348" ph="{&quot;BSSID&quot;: &quot;00:11:22:33:44:55&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="2361:2439" ph="{&quot;BSSID&quot;: &quot;AA:11:22:33:44:55&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="2452:2530" ph="{&quot;BSSID&quot;: &quot;BB:11:22:33:44:55&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="2557:2874" ph="{...}" />
-              <marker date="1471300203874" expanded="true" signature="2584:2866" ph="[...]" />
-              <marker date="1471300203874" expanded="true" signature="2596:2674" ph="{&quot;BSSID&quot;: &quot;00:11:22:33:44:55&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="2687:2765" ph="{&quot;BSSID&quot;: &quot;AA:11:22:33:44:55&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="2778:2856" ph="{&quot;BSSID&quot;: &quot;BB:11:22:33:44:55&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="3155:3415" ph="[...]" />
-              <marker date="1471300203874" expanded="true" signature="3159:3389" ph="{&quot;name&quot;: &quot;Feira da fruta&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="3172:3222" ph="{&quot;$oid&quot;: &quot;57b1dcf9052acc2307ae9a56&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="3393:3406" ph="{...}" />
-              <marker date="1471300203874" expanded="true" signature="3574:3835" ph="[...]" />
-              <marker date="1471300203874" expanded="true" signature="3578:3606" ph="{&quot;name&quot;: &quot;Feira da fruta&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="3578:3809" ph="{&quot;name&quot;: &quot;Carraca do Peixe&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="3591:3606" ph="{&quot;$oid&quot;: &quot;xxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="3813:3826" ph="{...}" />
-              <marker date="1471300203874" expanded="true" signature="4047:4289" ph="[...]" />
-              <marker date="1471300203874" expanded="true" signature="4051:4081" ph="{&quot;name&quot;: &quot;Main Lobby&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="4051:4280" ph="{&quot;acquisition_set_id&quot;: &quot;57b1dd42052acc2307ae9a58&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="4064:4081" ph="{&quot;$oid&quot;: &quot;yyyyyyyyyyyyyyyyyyyyyyyy&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="4640:4857" ph="[...]" />
-              <marker date="1471300203874" expanded="true" signature="4644:4848" ph="{&quot;BSSID&quot;: &quot;00:11:22:33:44:55&quot;...}" />
-              <marker date="1471300203874" expanded="true" signature="4708:4754" ph="{&quot;$oid&quot;: &quot;57b1dd42052acc2307ae9a5a&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="351:435" ph="{...}" />
+              <marker date="1471300310125" expanded="true" signature="364:433" ph="{&quot;email&quot;: &quot;test@net.map&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="483:705" ph="{&quot;authentication_token&quot;: &quot;xxxxxxxxxxxxxxxxxxxxxxxx&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="1083:1133" ph="{...}" />
+              <marker date="1471300310125" expanded="true" signature="1099:1131" ph="{&quot;name&quot;: &quot;New Facility&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="1330:1409" ph="{...}" />
+              <marker date="1471300310125" expanded="true" signature="1342:1407" ph="{&quot;name&quot;: &quot;New Zone&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="1716:2886" ph="{...}" />
+              <marker date="1471300310125" expanded="true" signature="1739:2884" ph="{&quot;zone_id&quot;: &quot;xxxxxxxxxxxxxx&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="1897:2880" ph="[...]" />
+              <marker date="1471300310125" expanded="true" signature="1905:2222" ph="{...}" />
+              <marker date="1471300310125" expanded="true" signature="1932:2214" ph="[...]" />
+              <marker date="1471300310125" expanded="true" signature="1944:2022" ph="{&quot;BSSID&quot;: &quot;00:11:22:33:44:55&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="2035:2113" ph="{&quot;BSSID&quot;: &quot;AA:11:22:33:44:55&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="2126:2204" ph="{&quot;BSSID&quot;: &quot;BB:11:22:33:44:55&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="2231:2548" ph="{...}" />
+              <marker date="1471300310125" expanded="true" signature="2258:2540" ph="[...]" />
+              <marker date="1471300310125" expanded="true" signature="2270:2348" ph="{&quot;BSSID&quot;: &quot;00:11:22:33:44:55&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="2361:2439" ph="{&quot;BSSID&quot;: &quot;AA:11:22:33:44:55&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="2452:2530" ph="{&quot;BSSID&quot;: &quot;BB:11:22:33:44:55&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="2557:2874" ph="{...}" />
+              <marker date="1471300310125" expanded="true" signature="2584:2866" ph="[...]" />
+              <marker date="1471300310125" expanded="true" signature="2596:2674" ph="{&quot;BSSID&quot;: &quot;00:11:22:33:44:55&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="2687:2765" ph="{&quot;BSSID&quot;: &quot;AA:11:22:33:44:55&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="2778:2856" ph="{&quot;BSSID&quot;: &quot;BB:11:22:33:44:55&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="3151:3411" ph="[...]" />
+              <marker date="1471300310125" expanded="true" signature="3155:3385" ph="{&quot;name&quot;: &quot;Feira da fruta&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="3168:3218" ph="{&quot;$oid&quot;: &quot;57b1dcf9052acc2307ae9a56&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="3389:3402" ph="{...}" />
+              <marker date="1471300310125" expanded="true" signature="3566:3827" ph="[...]" />
+              <marker date="1471300310125" expanded="true" signature="3570:3598" ph="{&quot;name&quot;: &quot;Feira da fruta&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="3570:3801" ph="{&quot;name&quot;: &quot;Carraca do Peixe&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="3583:3598" ph="{&quot;$oid&quot;: &quot;xxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="3805:3818" ph="{...}" />
+              <marker date="1471300310125" expanded="true" signature="4035:4277" ph="[...]" />
+              <marker date="1471300310125" expanded="true" signature="4039:4069" ph="{&quot;name&quot;: &quot;Main Lobby&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="4039:4268" ph="{&quot;acquisition_set_id&quot;: &quot;57b1dd42052acc2307ae9a58&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="4052:4069" ph="{&quot;$oid&quot;: &quot;yyyyyyyyyyyyyyyyyyyyyyyy&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="4624:4841" ph="[...]" />
+              <marker date="1471300310125" expanded="true" signature="4628:4832" ph="{&quot;BSSID&quot;: &quot;00:11:22:33:44:55&quot;...}" />
+              <marker date="1471300310125" expanded="true" signature="4692:4738" ph="{&quot;$oid&quot;: &quot;57b1dd42052acc2307ae9a5a&quot;...}" />
             </folding>
           </first_editor>
           <second_editor />

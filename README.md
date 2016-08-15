@@ -165,7 +165,7 @@ GET to `/facilities`
 No extra parameters are required.
 
 Response format:
-```json
+```
 [
   {
     "_id": {
@@ -190,7 +190,7 @@ GET to `/zones`, parameter: `facility_id`
 Example: `/zones?facility_id=xxxxxxxxxxxxxxxxxxxxxx`
 
 Response format:
-```json
+```
 [
   {
     "_id": {
@@ -216,7 +216,7 @@ GET to `/acquisitions`, parameter: `zone_id` OR `acquisition_set_id`
 Example: `/acquisitions?zone_id=xxxxxxxxxxxxxxxxxxxxxx`
 
 Response format:
-```json
+```
 [
   {
     "_id": {
@@ -243,7 +243,7 @@ GET to `/access_points`, parameter: `zone_id` OR `acquisition_id`
 Example: `/access_points?zone_id=xxxxxxxxxxxxxxxxxxxxxx`
 
 Response format:
-```json
+```
 [
   {
     "BSSID": "00:11:22:33:44:55",
