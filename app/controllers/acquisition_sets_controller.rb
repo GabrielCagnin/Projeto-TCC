@@ -1,8 +1,7 @@
 class AcquisitionSetsController < ApplicationController
-  before_action :set_acquisition_set, only: [:show]
 
   def show_all
-    render json: @acquisition_set
+    render json: @acquisition_set, status: :ok
   end
 
 

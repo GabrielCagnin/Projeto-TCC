@@ -5,6 +5,7 @@ class Zone
   belongs_to :facility
   has_many :acquisition_sets
   has_many :acquisitions
+  has_many :access_points
 
   field :name, type: String
 
