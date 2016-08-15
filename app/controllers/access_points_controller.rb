@@ -1,4 +1,5 @@
 class AccessPointsController < ApplicationController
+
   def show_all
 
     if params[:zone_id] != nil and params[:acquisition_id] != nil
