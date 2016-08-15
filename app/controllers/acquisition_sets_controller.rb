@@ -1,7 +1,7 @@
 class AcquisitionSetsController < ApplicationController
   before_action :set_acquisition_set, only: [:show]
 
-  def show
+  def show_all
     render json: @acquisition_set
   end
 
@@ -67,7 +67,7 @@ class AcquisitionSetsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def acquisition_set_params
-    params.require(:acquisition_set).permit(:normalization_algorithm, :time_interval, :measures_per_point, :zone_id,
-                                            {acquisitions: [{access_points: [:BSSID, :RSSI]}]})
+    params.require(:acquisition_set).permit(:id, :normalization_algorithm, :time_interval, :measures_per_point,
+                                            :zone_id, {acquisitions: [{access_points: [:BSSID, :RSSI]}]})
   end
 end
