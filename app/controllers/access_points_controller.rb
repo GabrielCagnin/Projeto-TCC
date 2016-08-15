@@ -7,7 +7,7 @@ class AccessPointsController < ApplicationController
              status: :unprocessable_entity
 
     elsif params[:zone_id] != nil
-      @access_points = Zone.find(params[:zone_id]).access_points
+      @access_points = Zone.find(params[:zone_id]).acquisitions.map(&:access_points)
       render json: @access_points, status: :ok
 
     elsif params[:acquisition_id] != nil

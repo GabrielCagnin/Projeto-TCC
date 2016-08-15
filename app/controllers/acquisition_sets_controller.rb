@@ -41,7 +41,6 @@ class AcquisitionSetsController < ApplicationController
       # For each access point inside acquisition, create it
       acquisition[:access_points].each do |access_point|
         @access_point = AccessPoint.new(access_point)
-        @access_point.zone_id = acquisition_set_params[:zone_id]
         @access_point.acquisition= @acquisition
 
         # Tries to save @acquisition. If fails, render error and return
