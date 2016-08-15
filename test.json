@@ -1,6 +1,6 @@
 {
   "acquisition_set": {
-    "zone_id": "57b1dd19052acc2307ae9a57",
+    "zone_id": "57b24feb052acc339d1b4861",
     "normalization_algorithm": "Kalman Filter",
     "time_interval": 0.5,
     "measures_per_point": 3,

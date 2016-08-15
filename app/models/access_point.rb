@@ -1,8 +1,7 @@
 class AccessPoint
   include Mongoid::Document
 
-  belongs_to :zone
-  belongs_to :acquisition
+  embedded_in :acquisition
 
   field :BSSID, type: String
   field :RSSI, type: Integer

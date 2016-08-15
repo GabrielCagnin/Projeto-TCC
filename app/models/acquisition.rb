@@ -4,7 +4,7 @@ class Acquisition
 
   belongs_to :acquisition_set
   belongs_to :zone
-  has_many :access_points
+  embeds_many :access_points
 
   accepts_nested_attributes_for :access_points
 
