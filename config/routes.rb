@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   # Shows all access points from an acquisition passed as parameter
   get '/access_points', to: 'access_points#show_all', defaults: {format: :json}
 
-  # Shows all acquisitions from a zone passed as parameter
-  get '/acquisitions', to: 'acquisition#show_all', defaults: {format: :json}
+  # Shows all acquisitions from a zone OR acquisition set passed as parameter
+  get '/acquisitions', to: 'acquisitions#show_all', defaults: {format: :json}
 
 end
