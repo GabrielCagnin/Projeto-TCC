@@ -33,3 +33,6 @@ gem 'mongoid', github: 'mongodb/mongoid'
 gem 'omniauth'
 gem 'devise', github: 'plataformatec/devise', tag: 'v4.1.1'
 gem 'simple_token_authentication', github: 'gonzalo-bulnes/simple_token_authentication', tag: 'v1.14.0'
+
+# Custom exceptions
+gem 'exception_handler'
