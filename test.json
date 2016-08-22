@@ -1,6 +1,6 @@
 {
   "acquisition_set": {
-    "zone_id": "57b24feb052acc339d1b4861",
+    "zone_id": "57b6046a19e3c17d5ac586f0",
     "normalization_algorithm": "Kalman Filter",
     "time_interval": 0.5,
     "measures_per_point": 3,
@@ -18,7 +18,16 @@
           {
             "BSSID": "BB:11:22:33:44:55",
             "RSSI": -49
+          },
+          {
+            "BSSID": "CC:11:22:33:44:55",
+            "RSSI": -41
+          },
+          {
+            "BSSID": "CC:11:22:33:44:55",
+            "RSSI": -78
           }
+        ]
         ]
       },
       {
@@ -33,6 +42,10 @@
           },
           {
             "BSSID": "BB:11:22:33:44:55",
+            "RSSI": -33
+          },
+          {
+            "BSSID": "CC:11:22:33:44:55",
             "RSSI": -33
           }
         ]
