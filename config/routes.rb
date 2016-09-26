@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   # Shows all acquisitions from a zone OR acquisition set passed as parameter
   get '/acquisitions', to: 'acquisitions#show_all', defaults: {format: :json}
 
-  # Shows all acquisitions from a zone OR acquisition set passed as parameter
-  post '/classify_zone', to: 'classify_zone#get_zone', defaults: {format: :json}
+  # Enqueues acquistion in the database
+  post '/classify_zone', to: 'enqueued_classification_request#enqueue_acquisition', defaults: {format: :json}
 
 end
