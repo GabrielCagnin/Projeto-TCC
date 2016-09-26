@@ -22,4 +22,7 @@ Rails.application.routes.draw do
   # Enqueues acquistion in the database
   post '/classify_zone', to: 'enqueued_classification_request#enqueue_acquisition', defaults: {format: :json}
 
+  # Rserv test
+  post '/test', to: 'classify_zone#get_zone', defaults: {format: :json}
+
 end
