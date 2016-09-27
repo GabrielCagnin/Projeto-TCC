@@ -1,17 +1,6 @@
 {
-  "facility_id": "57b24f68052acc339d1b485e",
-  "access_points": [
-    {
-      "BSSID": "00:11:22:33:44:55",
-      "RSSI": -30
-    },
-    {
-      "BSSID": "AA:11:22:33:44:55",
-      "RSSI": -37
-    },
-    {
-      "BSSID": "BB:11:22:33:44:55",
-      "RSSI": -49
+  "user": {
+    "email": "test@net.map",
+    "password": "12345678"
     }
-  ]
-  }
+}
