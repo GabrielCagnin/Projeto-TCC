@@ -1,6 +1,71 @@
 {
-  "user": {
-    "email": "test@net.map",
-    "password": "12345678"
-    }
+  "acquisition_set": {
+    "zone_id": "57b6046a19e3c17d5ac586f0",
+    "normalization_algorithm": "Kalman Filter",
+    "time_interval": 0.5,
+    "measures_per_point": 3,
+    "acquisitions": [
+      {
+        "access_points": [
+          {
+            "BSSID": "00:11:22:33:44:55",
+            "RSSI": -30
+          },
+          {
+            "BSSID": "AA:11:22:33:44:55",
+            "RSSI": -37
+          },
+          {
+            "BSSID": "BB:11:22:33:44:55",
+            "RSSI": -49
+          },
+          {
+            "BSSID": "CC:11:22:33:44:55",
+            "RSSI": -41
+          },
+          {
+            "BSSID": "CC:11:22:33:44:55",
+            "RSSI": -78
+          }
+        ]
+        ]
+      },
+      {
+        "access_points": [
+          {
+            "BSSID": "00:11:22:33:44:55",
+            "RSSI": -39
+          },
+          {
+            "BSSID": "AA:11:22:33:44:55",
+            "RSSI": -48
+          },
+          {
+            "BSSID": "BB:11:22:33:44:55",
+            "RSSI": -33
+          },
+          {
+            "BSSID": "CC:11:22:33:44:55",
+            "RSSI": -33
+          }
+        ]
+      },
+      {
+        "access_points": [
+          {
+            "BSSID": "00:11:22:33:44:55",
+            "RSSI": -90
+          },
+          {
+            "BSSID": "AA:11:22:33:44:55",
+            "RSSI": -32
+          },
+          {
+            "BSSID": "BB:11:22:33:44:55",
+            "RSSI": -64
+          }
+        ]
+      }
+    ]
+  }
 }
