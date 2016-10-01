@@ -4,7 +4,7 @@ require 'rserve'
 ::Rserve_con=Rserve::Connection.new
 
 # Change R to point to correct dir
-Rserve_con.eval('setwd("~/server_api")')
+Rserve_con.eval('setwd("~/machinelearing_R")')
 
 # Source all functions in Rserve workspace
 Rserve_con.eval('source("serverFunctions.r")')

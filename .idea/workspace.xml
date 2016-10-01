@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf7a9db0-5c08-4637-8770-53046059feb0" name="Default" comment="Started rserve connection as initializer">
+    <list default="true" id="cf7a9db0-5c08-4637-8770-53046059feb0" name="Default" comment="Added rserve gem to gemfile">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/rserve.rb" afterPath="$PROJECT_DIR$/config/initializers/rserve.rb" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -52,8 +51,8 @@
       <file leaf-file-name="rserve.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/initializers/rserve.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+            <state relative-caret-position="108">
+              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -152,8 +151,8 @@
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/test.json" />
         <option value="$PROJECT_DIR$/app/controllers/classify_zone_controller.rb" />
-        <option value="$PROJECT_DIR$/config/initializers/rserve.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/initializers/rserve.rb" />
       </list>
     </option>
   </component>
@@ -2069,7 +2068,7 @@
       <workItem from="1471286730688" duration="16742000" />
       <workItem from="1475184278055" duration="147000" />
       <workItem from="1475282011755" duration="2189000" />
-      <workItem from="1475340964168" duration="1471000" />
+      <workItem from="1475340964168" duration="2196000" />
     </task>
     <task id="LOCAL-00001" summary="v0.1.2&#10;Can select all facilities per user">
       <created>1458179923617</created>
@@ -2330,11 +2329,18 @@
       <option name="project" value="LOCAL" />
       <updated>1475342475993</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Added rserve gem to gemfile">
+      <created>1475342684239</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1475342684239</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147671000" />
+    <option name="totallyTimeSpent" value="148396000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2385,7 +2391,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Created access_point model and changes measure function to it" />
     <MESSAGE value="Removed unused AccessPoint routes" />
     <MESSAGE value="Require access_point and measure on post requests" />
     <MESSAGE value="Measure return a json containing its data after creation" />
@@ -2410,7 +2415,8 @@
     <MESSAGE value="Using gem exception_handler" />
     <MESSAGE value="Checkout to fff5cc012b6aa3076a90f94a02353727c8ee9960" />
     <MESSAGE value="Started rserve connection as initializer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started rserve connection as initializer" />
+    <MESSAGE value="Added rserve gem to gemfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added rserve gem to gemfile" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -2771,8 +2777,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/rserve.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        <state relative-caret-position="108">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
           <folding />
         </state>
       </provider>
