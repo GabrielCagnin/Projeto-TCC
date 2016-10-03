@@ -27,11 +27,13 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bson_ext'
 
 # MongoDB adapter
-gem 'mongoid', github: 'mongodb/mongoid'
+gem 'mongoid', github: 'mongodb/mongoid', tag: 'v6.0.0'
 
 # Authentication gems
 gem 'omniauth'
 gem 'devise', github: 'plataformatec/devise', tag: 'v4.1.1'
 gem 'simple_token_authentication', github: 'gonzalo-bulnes/simple_token_authentication', tag: 'v1.14.0'
 
+
+# Rserve ruby plugin
 gem 'rserve-client'

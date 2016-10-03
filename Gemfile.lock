@@ -10,11 +10,12 @@ GIT
 
 GIT
   remote: git://github.com/mongodb/mongoid.git
-  revision: 768ae5386646245072e55c1a7dd5f7b2d50022ba
+  revision: b41ad04c2e3978f806f312ad5dcb7d6cf6ee71d7
+  tag: v6.0.0
   specs:
-    mongoid (6.0.0.rc0)
+    mongoid (6.0.0)
       activemodel (~> 5.0)
-      mongo (~> 2.2)
+      mongo (~> 2.3)
 
 GIT
   remote: git://github.com/plataformatec/devise.git
@@ -97,8 +98,8 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
     minitest (5.9.0)
-    mongo (2.2.7)
-      bson (~> 4.0)
+    mongo (2.3.0)
+      bson (~> 4.1)
     multi_json (1.12.1)
     nio4r (1.2.1)
     nokogiri (1.6.8)
@@ -184,4 +185,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   1.12.5
+   1.13.0

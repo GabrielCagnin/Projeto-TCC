@@ -1,9 +1,8 @@
 require 'rserve'
 class ClassifyZoneController < ApplicationController
 
-  def get_zone
+  def train_facility
 
-    require 'rserve'
 
 # Connect to Rserve
     con=Rserve::Connection.new
@@ -14,13 +13,16 @@ class ClassifyZoneController < ApplicationController
 # Source all functions in Rserve workspace
     con.eval('source("serverFunctions.r")')
 
+# first, prepare data with correct facility ID
+    con.eval('aws.PrepareData('+facility_id+')')
+#then, we train the models
+    response = con.eval('aws.trainModels('+facility_id+')')
 
-    #first, prepare data with correct facility ID
-    x=con.eval('aws.PrepareData("57b6043d19e3c17d5ac586ef")')
-    #then, we train the models
-    y=con.eval('aws.trainModels("57b6043d19e3c17d5ac586ef")')
+    con.eval('rm(list = ls()')
 
-    render json: x
+    if response['attr'] == null
+      render json: {'status': 'created'}, status: :ok
+    end
 
   end
 end
