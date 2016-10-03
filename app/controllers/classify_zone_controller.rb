@@ -15,10 +15,10 @@ class ClassifyZoneController < ApplicationController
 
 # first, prepare data with correct facility ID
     con.eval('aws.PrepareData('+facility_id+')')
-#then, we train the models
+# then, we train the models
     response = con.eval('aws.trainModels('+facility_id+')')
 
-    con.eval('rm(list = ls()')
+    con.eval('rm(list=ls()')
 
     if response['attr'] == null
       render json: {'status': 'created'}, status: :ok
