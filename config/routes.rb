@@ -18,6 +18,6 @@ Rails.application.routes.draw do
   get '/acquisitions', to: 'acquisitions#show_all', defaults: {format: :json}
 
   # test
-  get '/train_facility', to: 'classify_zone#get_zone'
+  get '/train_facility', to: 'train_facility#get_zone'
 
 end

@@ -22,6 +22,8 @@ class ClassifyZoneController < ApplicationController
 
     if response['attr'] == null
       render json: {'status': 'created'}, status: :ok
+    else
+      render json: {'status': 'error'}, status: :internal_server_error
     end
 
   end
