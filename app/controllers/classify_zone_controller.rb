@@ -3,27 +3,27 @@ class ClassifyZoneController < ApplicationController
 
   def train_facility
 
-
-# Connect to Rserve
+    facility_id = params[:facility_id]
+    # Connect to Rserve
     con=Rserve::Connection.new
 
-# Change R to point to correct dir
+    # Change R to point to correct dir
     con.eval('setwd("~/machinelearning_R")')
 
-# Source all functions in Rserve workspace
+    # Source all functions in Rserve workspace
     con.eval('source("serverFunctions.r")')
 
-# first, prepare data with correct facility ID
+    # first, prepare data with correct facility ID
     con.eval('aws.PrepareData('+facility_id+')')
-# then, we train the models
+    # then, we train the models
     response = con.eval('aws.trainModels('+facility_id+')')
 
-    con.eval('rm(list=ls()')
+    #con.eval('rm(list=ls()')
 
     if response['attr'] == null
-      render json: {'status': 'created'}, status: :ok
+      render json: {'status': 'created'}
     else
-      render json: {'status': 'error'}, status: :internal_server_error
+      render json: {'status': 'error'}
     end
 
   end
