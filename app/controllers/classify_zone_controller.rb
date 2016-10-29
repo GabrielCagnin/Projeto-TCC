@@ -21,11 +21,7 @@ class ClassifyZoneController < ApplicationController
     #con.eval('rm(list=ls()')
 
 
-    if response['attr'] == null
-      render json: {'status': 'created'}, status: :ok
-    else
-      render json: {'status': 'error'}, status: :internal_server_error
-    end
+    render response
 
   end
 
