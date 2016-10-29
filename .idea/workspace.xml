@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf7a9db0-5c08-4637-8770-53046059feb0" name="Default" comment="Fix double rendering">
+    <list default="true" id="cf7a9db0-5c08-4637-8770-53046059feb0" name="Default" comment="Render response">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/classify_zone_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/classify_zone_controller.rb" />
     </list>
@@ -61,8 +61,8 @@
       <file leaf-file-name="classify_zone_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/classify_zone_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="168">
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -114,7 +114,7 @@
     <option name="FORCE_PUSH_ALLOWED" value="true" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response29.txt" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response33.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -2142,7 +2142,7 @@
       <workItem from="1475340964168" duration="3192000" />
       <workItem from="1475510741541" duration="223000" />
       <workItem from="1475511811056" duration="4732000" />
-      <workItem from="1477782301657" duration="1872000" />
+      <workItem from="1477782301657" duration="1975000" />
     </task>
     <task id="LOCAL-00001" summary="v0.1.2&#10;Can select all facilities per user">
       <created>1458179923617</created>
@@ -2466,11 +2466,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477783343397</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Render response">
+      <created>1477784362070</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1477784362070</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156219000" />
+    <option name="totallyTimeSpent" value="156322000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2521,7 +2528,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="readme format" />
     <MESSAGE value="Changing facility route resources and accessing all facilities from user" />
     <MESSAGE value="Facilities method doesn't require any parameters, returns all user's facilities" />
     <MESSAGE value="Creates zones methods, already working" />
@@ -2546,7 +2552,8 @@
     <MESSAGE value="Train facility path" />
     <MESSAGE value="Render response after training" />
     <MESSAGE value="Fix double rendering" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix double rendering" />
+    <MESSAGE value="Render response" />
+    <option name="LAST_COMMIT_MESSAGE" value="Render response" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -2869,8 +2876,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/classify_zone_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="168">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           <folding />
         </state>
       </provider>

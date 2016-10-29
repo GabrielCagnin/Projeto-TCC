@@ -21,7 +21,7 @@ class ClassifyZoneController < ApplicationController
     #con.eval('rm(list=ls()')
 
 
-    render response
+    render json: response, status: :ok
 
   end
 
