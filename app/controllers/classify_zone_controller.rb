@@ -20,11 +20,10 @@ class ClassifyZoneController < ApplicationController
 
     #con.eval('rm(list=ls()')
 
-    if response['attr'] == null
-      render json: {'status': 'created'}
-    else
-      render json: {'status': 'error'}
-    end
+
+    render json: {'status': response}
 
   end
+
+
 end

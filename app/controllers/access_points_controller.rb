@@ -17,7 +17,6 @@ class AccessPointsController < ApplicationController
     else
       render json: 'You need a zone_id or an acquisition_id',
              status: :unprocessable_entity
-
     end
   end
 
