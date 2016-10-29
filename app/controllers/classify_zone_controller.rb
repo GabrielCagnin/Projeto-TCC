@@ -25,5 +25,9 @@ class ClassifyZoneController < ApplicationController
 
   end
 
+  def identify_zone
+
+  end
+
 
 end
