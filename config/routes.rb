@@ -17,7 +17,11 @@ Rails.application.routes.draw do
   # Shows all acquisitions from a zone OR acquisition set passed as parameter
   get '/acquisitions', to: 'acquisitions#show_all', defaults: {format: :json}
 
-  # test
+  # Train a facility
   get '/train_facility', to: 'classify_zone#train_facility'
+
+  # Identify a zone
+  post '/identify_zone', to: 'classify_zone#identify_zone'
+
 
 end

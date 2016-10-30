@@ -26,7 +26,17 @@ class ClassifyZoneController < ApplicationController
   end
 
   def identify_zone
+    @classification = QueuedClassification.new(identify_zone_params)
 
+    @classification.save
+
+    render json: @classification.id
+
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def identify_zone_params
+    params.require(:queued_classification).permit(:id, :facility_id, {access_points: [:BSSID, :RSSI]})
   end
 
 
