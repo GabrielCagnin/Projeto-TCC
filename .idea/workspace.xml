@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf7a9db0-5c08-4637-8770-53046059feb0" name="Default" comment="R wd set up">
+    <list default="true" id="cf7a9db0-5c08-4637-8770-53046059feb0" name="Default" comment="Clear R ws">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/classify_zone_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/classify_zone_controller.rb" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -363,7 +362,7 @@
       <option name="presentableId" value="Default" />
       <updated>1477928019752</updated>
       <workItem from="1477928030306" duration="1148000" />
-      <workItem from="1477929397056" duration="2755000" />
+      <workItem from="1477929397056" duration="2793000" />
     </task>
     <task id="LOCAL-00001" summary="Default rendering in json">
       <created>1477930179067</created>
@@ -386,11 +385,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477931363780</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Clear R ws">
+      <created>1477932171258</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1477932171258</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7081000" />
+    <option name="totallyTimeSpent" value="7119000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1366" height="738" extended-state="6" />
@@ -435,7 +441,8 @@
     <MESSAGE value="Default rendering in json" />
     <MESSAGE value="R Single test" />
     <MESSAGE value="R wd set up" />
-    <option name="LAST_COMMIT_MESSAGE" value="R wd set up" />
+    <MESSAGE value="Clear R ws" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clear R ws" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
