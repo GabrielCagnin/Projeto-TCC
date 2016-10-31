@@ -30,7 +30,12 @@ class ClassifyZoneController < ApplicationController
 
     @classification.save
 
-    render json: @classification.id
+    # Connect to Rserve
+    con=Rserve::Connection.new
+
+    response = con.eval('aws.SingleTest(queueID = "'+@classification.id+'",facilityID="'+@classification.facility_id+'")')
+
+    render json: response
 
   end
 
