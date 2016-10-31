@@ -38,7 +38,7 @@ class ClassifyZoneController < ApplicationController
     # Source all functions in Rserve workspace
     con.eval('source("serverFunctions.r")')
 
-    response = con.eval('try(aws.SingleTest(queueID = "'+@classification.id+'",facilityID="'+@classification.facility_id+'"),silent=TRUE)')
+    response = con.eval('try(aws.SingleTest(queueID = "'+@classification.id+'",facilityID="'+@classification.facility_id+'"))')
 
     logger.debug response
     render json: response
