@@ -18,10 +18,9 @@ class ClassifyZoneController < ApplicationController
     # then, we train the models
     response = con.eval('aws.trainModels('+facility_id+')')
 
-    #con.eval('rm(list=ls()')
-
-
     render json: response, status: :ok
+
+    con.eval('rm(list=ls()')
 
   end
 
@@ -42,6 +41,7 @@ class ClassifyZoneController < ApplicationController
     response = con.eval('aws.SingleTest(queueID = "'+@classification.id+'",facilityID="'+@classification.facility_id+'")')
 
     render json: response
+    con.eval('rm(list=ls()')
 
   end
 
