@@ -40,7 +40,7 @@ class ClassifyZoneController < ApplicationController
 
     response = con.eval('try(aws.SingleTest(queueID = "'+@classification.id+'",facilityID="'+@classification.facility_id+'"),silent=TRUE)')
 
-    puts response
+    logger.debug response
     render json: response
     con.eval('rm(list=ls()')
 
