@@ -33,6 +33,12 @@ class ClassifyZoneController < ApplicationController
     # Connect to Rserve
     con=Rserve::Connection.new
 
+    # Change R to point to correct dir
+    con.eval('setwd("~/machinelearning_R")')
+
+    # Source all functions in Rserve workspace
+    con.eval('source("serverFunctions.r")')
+
     response = con.eval('aws.SingleTest(queueID = "'+@classification.id+'",facilityID="'+@classification.facility_id+'")')
 
     render json: response
