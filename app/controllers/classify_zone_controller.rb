@@ -39,8 +39,7 @@ class ClassifyZoneController < ApplicationController
     con.eval('source("serverFunctions.r")')
 
     response = con.eval('try(aws.SingleTest(queueID = "'+@classification.id+'",facilityID="'+@classification.facility_id+'"))')
-    con.eval('rJava::.jstrVal(trainedModels$Tree$classifier')
-    con.eval('rJava::.jstrVal(trainedModels$SMO$classifier')
+
     render json: response
     con.eval('rm(list=ls()')
 
