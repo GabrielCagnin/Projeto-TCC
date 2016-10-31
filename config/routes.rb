@@ -18,10 +18,10 @@ Rails.application.routes.draw do
   get '/acquisitions', to: 'acquisitions#show_all', defaults: {format: :json}
 
   # Train a facility
-  get '/train_facility', to: 'classify_zone#train_facility'
+  get '/train_facility', to: 'classify_zone#train_facility', defaults: {format: :json}
 
   # Identify a zone
-  post '/identify_zone', to: 'classify_zone#identify_zone'
+  post '/identify_zone', to: 'classify_zone#identify_zone', defaults: {format: :json}
 
 
 end
