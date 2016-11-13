@@ -1,27 +1,25 @@
 {
-  "queued_job": {
-    "facility_id": "5806a9a1bde5c63ae4c5e3f0",
-    "access_points": [
-      {
-        "BSSID": "00:26:86:03:20:07",
-        "RSSI": -31
-      },
-      {
-        "BSSID": "00:27:22:a2:76:89",
-        "RSSI": -89
-      },
-      {
-        "BSSID": "14:cc:20:9c:b7:6b",
-        "RSSI": -76
-      },
-      {
-        "BSSID": "2c:c5:d3:2a:09:08",
-        "RSSI": -84
-      },
-      {
-        "BSSID": "2c:c5:d3:ea:09:08",
-        "RSSI": -83
-      }
-    ]
-  }
+  "facility_id": "58058784bde5c63ae4c5e2f1",
+  "access_points": [
+    {
+      "BSSID": "c0:4a:00:33:f8:48",
+      "RSSI": -70
+    },
+    {
+      "BSSID": "00:1d:d4:e7:69:a0",
+      "RSSI": -88
+    },
+    {
+      "BSSID": "c4:6e:1f:45:14:a8",
+      "RSSI": -91
+    },
+    {
+      "BSSID": "00:04:df:a2:60:df",
+      "RSSI": -80
+    },
+    {
+      "BSSID": "c8:91:f9:ec:4a:96",
+      "RSSI": -89
+    }
+  ]
 }

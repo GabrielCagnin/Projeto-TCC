@@ -38,9 +38,11 @@ class ZonesController < ApplicationController
       end
     end
 
-
   end
 
+  def delete_zone
+    @zone.delete
+  end
 
   private
   # Use callbacks to share common setup or constraints between actions.

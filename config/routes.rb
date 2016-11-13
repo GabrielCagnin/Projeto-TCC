@@ -23,5 +23,9 @@ Rails.application.routes.draw do
   # Identify a zone
   post '/identify_zone', to: 'classify_zone#identify_zone', defaults: {format: :json}
 
+  delete '/delete_facility', to: 'facilities#delete_facility', defaults: {format: :json}
+
+  delete '/delete_zone', to: 'zones#delete_zone', defaults: {format: :json}
+
 
 end

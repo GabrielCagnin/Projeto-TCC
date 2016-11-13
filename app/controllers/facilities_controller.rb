@@ -25,6 +25,9 @@ class FacilitiesController < ApplicationController
 
   end
 
+  def delete_facility
+    @facility.delete
+  end
 
   private
   # Use callbacks to share common setup or constraints between actions.

@@ -3,7 +3,7 @@ class Facility
   include Mongoid::Timestamps
 
   belongs_to :user
-  has_many :zones
+  has_many :zones, dependent: :delete
 
   field :name, type: String
   field :user_id, type: String
