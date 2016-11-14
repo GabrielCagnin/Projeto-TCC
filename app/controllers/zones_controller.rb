@@ -50,7 +50,8 @@ class ZonesController < ApplicationController
   end
 
   def clear_zone
-    if Zone.find(params[:id]).acquisitions.delete_all
+    @zone = Zone.find(params[:id])
+    if @zone.acquisitions.delete_all
       render json: ('Zone '+@zone.name+' was cleared.')
     else
       render json: ('Zone could not be cleared.')
