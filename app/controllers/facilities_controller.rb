@@ -28,9 +28,9 @@ class FacilitiesController < ApplicationController
   def delete_facility
     @facility = Facility.find(params[:id])
     if @facility.delete
-      render ('Facility '+@facility.name+' was deleted.')
+      render json: ('Facility '+@facility.name+' was deleted.')
     else
-      render ('Facility could not be deleted.')
+      render json: ('Facility could not be deleted.')
     end
   end
 
