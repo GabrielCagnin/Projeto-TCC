@@ -27,5 +27,7 @@ Rails.application.routes.draw do
 
   delete '/delete_zone', to: 'zones#delete_zone', defaults: {format: :json}
 
+  get '/clear_zone', to: 'zones#clear_zone', defaults: {format: :json}
+
 
 end

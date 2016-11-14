@@ -26,7 +26,12 @@ class FacilitiesController < ApplicationController
   end
 
   def delete_facility
-    Facility.find(params[:id]).delete
+    @facility = Facility.find(params[:id])
+    if @facility.delete
+      render ('Facility '+@facility.name+' was deleted.')
+    else
+      render ('Facility could not be deleted.')
+    end
   end
 
   private
