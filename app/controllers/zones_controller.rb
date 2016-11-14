@@ -41,15 +41,10 @@ class ZonesController < ApplicationController
   end
 
   def delete_zone
-    @zone.delete
+    Zone.find(params[:id]).delete
   end
 
   private
-  # Use callbacks to share common setup or constraints between actions.
-  def set_zone
-    @zone = Zone.find(params[:id])
-  end
-
   # Never trust parameters from the scary internet, only allow the white list through.
   def zone_params
     params.require(:zone).permit(:name, :facility_id)
