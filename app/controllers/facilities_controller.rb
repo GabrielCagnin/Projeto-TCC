@@ -26,15 +26,10 @@ class FacilitiesController < ApplicationController
   end
 
   def delete_facility
-    @facility.delete
+    Facility.find(params[:id]).delete
   end
 
   private
-  # Use callbacks to share common setup or constraints between actions.
-  def set_facility
-    @facility = Facility.find(params[:id])
-  end
-
   # Never trust parameters from the scary internet, only allow the white list through.
   def facility_params
     params.require(:facility).permit(:name)
